@@ -1,0 +1,232 @@
+$black-base: #333333;
+
+$bg-color: #ffffff;
+$text-color: #333333;
+
+$primary-color: #333333;
+$secondary-color: salmon;
+$highlight-color: #333333;
+
+$gutter: 50px;
+$gutter-l: 40px;
+$gutter-m: 30px;
+$gutter-s: 20px;
+
+$btn-color-light: $highlight-color;
+$btn-color-med: $highlight-color;
+
+$ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+@keyframes fade {
+    0%    { opacity: 0; }
+    100%  { opacity: 1.0; }
+}
+
+
+html {
+    width: 100%;
+    margin:0;
+    padding:0;
+    font: 400 18px/1.7em "Libre Baskerville", serif;
+    letter-spacing: 0.02em;
+    color: $text-color;
+}
+body {
+    background-color: $bg-color;
+    margin: 0;
+    padding: $gutter;
+}
+
+h1 { font-weight: 700; font-size: 1.4rem; line-height:1.1em; margin:0; color:black; }
+h3 { color:black; margin:0 0 2.4em; }
+
+p  { margin: 1.6em auto; }
+a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid $secondary-color;
+    font-weight:700;
+
+    &:hover {
+        border-color: salmon;
+    }
+
+    &#top_button {
+    	display:none;
+    	position: fixed;
+    	z-index: 100;
+    	height:0;
+    	width:50px;
+    	padding:25px 0;
+    	text-align: center;
+    	font:1.4em/0em "Libre Baskerville", serif;
+    	bottom:1.5em;
+    	right:1.5em;
+    	background-color: black;
+    	color:white;
+    	text-decoration: none;
+        border:none;
+    	}
+}
+
+img {
+    width:100%;
+}
+
+img.emoji {
+    width:1.4em;
+    line-height: 1.0em;
+    display: inline;
+    margin: 0 0.15em 0.25em;
+    vertical-align: middle;
+}
+#hammer { display:none; }
+
+
+.frame {
+    max-width: 720px;
+}
+
+#main_container {
+    padding: 2*$gutter 0 3*$gutter;
+}
+
+
+
+#contact_info {
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 20px $gutter/2;
+    letter-spacing: 0;
+    text-align: right;
+    color: #B0C1BB;
+
+    a {
+        text-decoration: none;
+        border:none;
+
+        margin-left:0.6em;
+
+        &:hover {
+            opacity:0.5;
+        }
+
+        img {
+            width:36px;
+        }
+    }
+}
+
+
+#second_container {
+    font-size: 0.75rem;
+    line-height: 1.7em;
+
+    #second {
+        letter-spacing: 0;
+
+        .sections {}
+        .work { display:none; }
+    }
+
+    h3 {
+        margin:0 0 2.4em;
+    }
+
+    /* temporarily hide links while resolving db issues */
+    .personal a {
+        border-bottom:none;
+        pointer-events: none;
+    }
+
+    ul {
+        padding: 0;
+        margin:0;
+
+        li {
+            display: inline-block;
+            width:100%;
+            margin:0 0 1.6em;
+
+            a {
+                font-style: italic;
+                font-weight: normal;
+            }
+
+            dt {
+                font-style: italic;
+                font-weight: normal;
+                display: inline;
+
+                &:after {
+                    content: ".";
+                }
+            }
+            dd {
+                display: inline;
+                margin:0;
+
+                &.links {
+                    display: block;
+
+                }
+                &.media {
+                    display: block;
+                    width:100%;
+                    margin: 1.5em 0 0;
+                }
+            }
+        }
+    }
+}
+
+#info {
+    padding: 2*$gutter 0 0;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    html {
+            font: 400 16px/1.7em "Libre Baskerville", serif;
+    }
+    body {
+        padding: $gutter-m;
+    }
+    #main_container {
+        padding: 3*$gutter-m 0;
+    }
+    #second_container {
+            font: 400 0.85rem/1.7em "Libre Baskerville", serif;
+
+    }
+    #superfluous { display: none; }
+    #hammer { display: inline-block; }
+
+    #info {
+        padding: 2*$gutter-m 0 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    html {
+            font: 400 14px/1.75em "Libre Baskerville", serif;
+    }
+    body {
+        padding: $gutter-s;
+    }
+    #main_container {
+        padding: 6*$gutter-s 0;
+    }
+    #second_container {
+            font: 400 1.0rem/1.75em "Libre Baskerville", serif;
+    }
+    #info {
+        padding: 4*$gutter-s 0 0;
+    }
+
+}
