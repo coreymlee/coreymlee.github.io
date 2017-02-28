@@ -6,13 +6,21 @@ $(document).ready(function() {
 	var message = "";
 
 	if (time >= 5 && time < 12) {
-		message = "Good morning";
+		message = "Good Morning";
 	} else if (time >= 12 && time < 18) {
-		message = "Good afternoon";
+		message = "Good Afternoon";
 	} else {
-		message = "Greetings";
+		message = "About Me";
 	}
 	$("#greeting").html(message);
-
-
+/*
+	$(".personal h3").click( function() {
+		viewProjects();
+	});
+*/
 });
+
+
+function viewProjects() {
+	$(".personal").toggleClass("expanded");
+}

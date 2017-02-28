@@ -1,164 +1,144 @@
-<!doctype html>
-<html>
-<head>
+---
+layout: default
+---
 
-	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
-	<script src="https://use.typekit.net/nyr8nyp.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<div id="main_container">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/home.css" media="screen, projection" />
+<div id="sidebar">
+	<div id="portrait">
+	</div>
+	<!--<img src="{{site.baseurl}}/images/cml.jpg">
+	-->
+	<div id="contact">
+		<h3>Contact</h3>
+		<ul id="contact_links">
+			<li><a href="mailto:info@coreymlee.com">info@coreymlee.com</a></li>
+			<li><a id="github" href="https://github.com/oeaeee" target="_blank">Github</a></li>
+			<li><a id="linkedin" href="https://www.linkedin.com/in/coreymlee" target="_blank">LinkedIn</a></li>
+		</ul>
+	</div>
+</div>
 
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
+<div id="main" class="frame">
 
-	<title>Corey Lee</title>
+	<section class="intro">
+		<h3><span id="greeting">About Me</span></h3>
+	  <p>
+			I do product research and design with <a href="http://www.adobe.com" target="_blank">Adobe</a>.
+			Our team develops innovation projects for the Document Cloud. Mostly, we spend time talking with users and trying to understand the models they bring to their interactions.
+		</p>
+		<p>
+			From 2012 to 2015, I ran a small consultancy designing and building things with Brief, Salesforce, the de Young Museum, and others.
+			Before that, I did research with <a href="http://www.momentdesign.com" target="_blank">Moment</a> and designed interfaces for <a href="http://www.locationlabs.com" target="_blank">Location Labs</a>.
+		</p>
+		<p>
+			In the fall of 2013, I was in-residence at the Tokyo Innovators House, Impact Japan's incubator space.
+		</p>
+		<p>
+			I also helped launch <a href="http://www.wethefeedies.com" target="_blank">Feedie</a>, an awesome campaign that's now funded over 10 million school meals.
+		</p>
+	</section>
 
-</head>
-<body>
-
-
-	<header>
-		<table>
-			<tr>
-				<td class="email">
-				</td>
-				<td class="contact_icons">
-					<a id="github" href="https://github.com/oeaeee" target="_blank"><img src="images/icon_github.png"></a>
-					<a id="linkedin" href="https://www.linkedin.com/in/coreymlee" target="_blank"><img src="images/icon_linkedin.png"></a>
-				</td>
-			</tr>
-		</table>
-	</header>
-
-    <div id="main_container" class="frame">
-
-		<div id="main">
-
-			<h1><span id="greeting">Greetings</span></h1>
-	        <p>
-				I do product research and design with <a href="http://www.adobe.com" target="_blank">Adobe</a>.
-				Previously, I ran a small consultancy building things for Brief, Salesforce, and the de Young Museum.
-				Before that, I had roles with <a href="http://www.momentdesign.com" target="_blank">Moment</a>,  <a href="http://tribalworldwide.com/" target="_blank">Tribal</a>, and <a href="http://www.locationlabs.com" target="_blank">Location Labs</a>.
-				I also helped launch <a href="http://www.wethefeedies.com" target="_blank">Feedie</a>, an awesome campaign that's now funded over 10 million school meals.
-			</p>
-	        <p class="sayhello">
-				Please say hey for <span id="superfluous">new projects, case studies,</span><img id="hammer" class="emoji" src="images/emoji_hammer.png"> or <img class="emoji" src="images/emoji_hot_beverage.png">.
-				<span id="contact">&#8594; <a href="mailto:info@coreymlee.com">info@coreymlee.com</a></span>
-			</p>
-		</div>
-
-
-		<div id="second">
 <!--
-            <div class="section work">
-				<h3>Selected work</h3>
-				<div class="column">
-					<ul>
-
-						<li>
-							<dt>Homey</dt>
-							<dd>Coming soon, Homey is an app for managing and keeping track of the home. I pitched in to organize the unwieldy flow of house maintenance projects into an approachable digital experience.</dd>
-						</li>
-						<li>
-							<dt>Brief</dt>
-							<dd>Worked with the early startup's founders, Jared and Martin, to research and design Brief. It used machine learning to index all of a person's files, wherever they're stored, and autogenerate human-centered metadata.</dd>
-						</li>
-						<li>
-							<dt>Salesforce</dt>
-							<dd>Distilled user research findings into functional insights for the redesign of Salesforce.com. From the learnings, we developed a new user-oriented taxonomy and global navigation. We helped merge their new visual design system with a fresh modular UX library.</dd>
-						</li>
-						<li>
-							<dt>Morgan Stanley</dt>
-							<dd>Foundational research to understand and design for the situational frames of financial advisors<wbr>—<wbr>in the office, in the field, and on their devices.</dd>
-						</li>
-						<li>
-							<dt>de Young Museum</dt>
-							<dd>Collaborated with the museum's Brinker Ferguson on a few projects, including an in-gallery piece for the Thomas G. Fowler collection. The interface allows visitors to flip through the late collector's sketchbook and "touch" artifacts found in the exhibit.</dd>
-						</li>
-						<li>
-							<dt>The Lunchbox Fund</dt>
-							<dd>Feedie transforms passion for sharing food photos into sharing real food for those in need. The campaign, led by Mario Batali and Jamie Oliver, supports the Lunchbox Fund, a non-profit that encourages school attendance in South Africa by providing daily lunches for vulnerable children.</dd>
-							<dd class="links">
-								<a href="https://itunes.apple.com/us/app/feedie/id638131854?mt=8&amp;ign-mpt=uo%3D2" target="_blank">iTunes</a>
-								<a href="http://wethefeedies.com" target="_blank">Website</a>
-							</dd>
-							<dd class="media">
-								<iframe src="https://player.vimeo.com/video/88517281?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-							</dd>
-						</li>
-
-					</ul>
-				</div>
-            </div>
+	<ul>
+		{% for post in site.posts %}
+		<li>
+			<span class="year">{{post.year}}</span>
+			<a href="{{post.url}}">{{post.title}}</a>
+			<p>{{post.description}}</p>
+		</li>
+		{% endfor %}
+	</ul>
 -->
-            <div class="section personal">
-					<h3>Personal Projects</h3>
-					<div class="column">
 
-						<ul>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/thesis-habits-disruptions-and-behavior-change/">Habits and Disruptions (MFA Thesis)</a></dt>
-								<dd>My thesis studied habit disruptions as a means to understand behavior and research the logic behind people's interactions.</dd>
+  <section class="work">
+		<h3>Selected work</h3>
+		<div class="column">
+			<ul>
 
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/impact-skyline/">Impact Skyline</a></dt>
-								<dd>Recipient of a $10K Social Entrepreneurship Grant from the Center for Art and Public Life, Impact Skyline was an ethnographic research and service design project with Skyline High School in Oakland, CA.</dd>
-							</li>
-							<li>
-								<dt>Impact Foundation Tokyo</dt>
-								<dd>I spent the fall of 2013 in-residence at Impact House, an incubator space in the Omotesando neighborhood of Tokyo. During my stay, I created Topo. The Foundation runs TEDxTokyo and Global Entrepreneurship Week.</dd>
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/lub-dub/">Lub Dub</a></dt>
-								<dd>A pillow that pulses with a partner's heartbeat.</dd>
-							</li>
-							<li>
-								<dd><a href="http://www.coreymlee.com/portfolio/elevator/">Elevator</a> and <a href="http://www.coreymlee.com/portfolio/66edorp/">66edorp</a> were attempts to see if changing a device's screen interface could change its ergonomics and evolve a "new" device.</dd>
-							</li>
-							<li>
-								<dt><a href="https://github.com/oeaeee/n1-stripe">N1 Stripe</a></dt>
-								<dd>A theme hack for the Nylas N1 email client that rearranges UI layout, tidies up visuals, and adds a few subtle animations. (2 whole stars on GitHub! <img class="emoji" src="images/emoji_partypopper.png">)</dd>
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/the-other-end/">The Other End</a></dt>
-								<dd>An IRL game using fiducial IDs to transform a corridor into an active race track.</dd>
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/topo/">Topo</a></dt>
-								<dd>A plugin to view Wikipedia articles as topographic maps of importance.</dd>
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/vannevar/">Vannevar</a></dt>
-								<dd>A browser plugin to aid Wikipedia reading by making it a little more linear.</dd>
-							</li>
-							<li>
-								<dt><a href="http://www.coreymlee.com/portfolio/skim/">Skim</a></dt>
-								<dd>A plugin offering a few ways to visually trim NYT articles and maybe improve reading efficiency.</dd>
-							</li>
-							<li>
-								<dt>Morning Data</dt>
-								<dd>A prototype for a data-infused mirror.</dd>
-							</li>
-							<li>
-								<dt>Kiosk</dt>
-								<dd>A thing that receives postings from the web and shouts them at passersby.</dd>
-							</li>
-						</ul>
+				<li>
+					<dt>Brief</dt>
+					<dd>Worked early with founders, Jared and Martin, to define a new way to organize files. It used machine learning to index all of a person's files, wherever they're stored, and autogenerate human-centered metadata.</dd>
+				</li>
+				<li>
+					<dt>Salesforce</dt>
+					<dd>Distilled user research findings into functional insights for the redesign of Salesforce.com. From the learnings, we developed a new user-oriented taxonomy and global navigation. We helped merge their new visual design system with a fresh modular UX library.</dd>
+				</li>
+				<li>
+					<dt>Morgan Stanley</dt>
+					<dd>Foundational research to understand and design for the situational frames of financial advisors<wbr>—<wbr>in the office, in the field, and on their devices.</dd>
+				</li>
+				<li>
+					<dt>de Young Museum</dt>
+					<dd>Collaborated with the museum's Brinker Ferguson on projects, including an in-gallery piece for the Thomas G. Fowler collection. The interface allows visitors to flip through the late collector's sketchbook and "touch" artifacts found in the exhibit.</dd>
+				</li>
+				<li>
+					<dt>The Lunchbox Fund</dt>
+					<dd>Feedie transforms passion for sharing food photos into sharing real food for those in need. The campaign, led by Mario Batali and Jamie Oliver, supports the Lunchbox Fund, a non-profit that encourages school attendance in South Africa by providing daily lunches for vulnerable children.</dd>
+					<dd class="links">
+						<a href="https://itunes.apple.com/us/app/feedie/id638131854?mt=8&amp;ign-mpt=uo%3D2" target="_blank">iTunes</a>
+						<a href="http://wethefeedies.com" target="_blank">Website</a>
+					</dd>
+					</dd>
+				</li>
 
-					</div>
-
-	            </div>
-
+			</ul>
 		</div>
-		<div id="info">
-			<a href="mailto:info@coreymlee.com">info@coreymlee.com</a>
+  </section>
 
-			<div>&copy; Copyright 2016</div>
+  <section class="personal">
+		<h3>Other Projects</h3>
+		<div class="column">
+
+			<ul>
+				<li class="project">
+					<dt class="hidelink"><a href="http://www.coreymlee.com/portfolio/thesis-habits-disruptions-and-behavior-change/">Habits and Disruptions</a> (MFA Thesis)</dt>
+					<dd>My thesis studied habit disruptions as a means to understand behavior and research the logic behind people's interactions.</dd>
+				</li>
+				<li class="project">
+					<dt><a href="https://github.com/oeaeee/n1-stripe">N1 Stripe</a></dt>
+					<dd>A theme hack for the Nylas N1 email client that rearranges UI layout, tidies up visuals, and adds a few subtle animations.</dd>
+				</li>
+				<li class="project">
+					<dt><a href="https://github.com/oeaeee/topo">Topo</a></dt>
+					<dd>A plugin to view Wikipedia articles as topographic maps of importance.</dd>
+				</li>
+				<li class="project">
+					<dt class="hidelink"><a href="http://www.coreymlee.com/portfolio/impact-skyline/">Impact Skyline</a></dt>
+					<dd>Recipient of a $10K Social Entrepreneurship Grant from the Center for Art and Public Life, Impact Skyline was an ethnographic research and service design project with Skyline High School in Oakland, CA.</dd>
+				</li>
+				<li class="project">
+					<dt><a href="https://github.com/oeaeee/vannevar">Vannevar</a></dt>
+					<dd>A browser plugin to aid Wikipedia reading by making it a little more linear.</dd>
+				</li>
+				<li class="project">
+					<dt><a href="https://github.com/oeaeee/skim">Skim</a></dt>
+					<dd>A plugin offering a few ways to visually trim NYT articles and maybe improve reading efficiency.</dd>
+				</li>
+				<li class="project">
+				 	<dt class="hidelink"><a href="http://www.coreymlee.com/portfolio/elevator/">Elevator</a> and <a href="http://www.coreymlee.com/portfolio/66edorp/">66edorp</a></dt>
+					<dd>were attempts to see if changing a device's screen interface could change its ergonomics and evolve a "new" device.</dd>
+				<li class="project">
+					<dt>Kiosk</dt>
+					<dd>A thing that receives postings from the web and shouts them at passersby.</dd>
+				</li>
+				<li class="project">
+					<dt class="hidelink"><a href="http://www.coreymlee.com/portfolio/lub-dub/">Lub Dub</a></dt>
+					<dd>A pillow that pulses with a partner's heartbeat.</dd>
+				</li>
+				<li class="project">
+					<dt><a href="https://vimeo.com/16981523">The Other End</a></dt>
+					<dd>An IRL game using fiducial IDs to transform a corridor into an active race track.</dd>
+				</li>
+				<li class="project">
+					<dt>Morning Data</dt>
+					<dd>A prototype for a data-infused mirror.</dd>
+				</li>
+			</ul>
 		</div>
 
-    </div>
+  </div>
 
-</body>
-</html>
+</section>
+
+</div>
