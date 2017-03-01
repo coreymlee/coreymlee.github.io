@@ -128,16 +128,17 @@ ul {
         margin-bottom: 2.475rem; } }
 @media screen and (max-width: 500px) {
   html {
-    font-size: 14.5px;
+    font-size: 15px;
+    line-height: 1.6rem;
     letter-spacing: 0; }
 
   body {
-    margin: 1.75rem 1.4rem; }
+    margin: 1.6rem 1.6rem; }
 
   h3 {
     font-size: 1rem; }
 
   #main_container #sidebar #portrait {
-    height: 14rem; } }
+    height: 16rem; } }
 
 /*# sourceMappingURL=home.css.map */
