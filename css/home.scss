@@ -152,12 +152,12 @@ ul {
 
 @media screen and (max-width: 840px) {
   body {
-    margin:1.25*$base-lh;
+    margin:2*$base-lh 1.5*$base-lh;
   }
   #main_container {
     margin:0;
     #sidebar {
-      padding-right: $base-lh;
+      padding-right: 1.25*$base-lh;
       #portrait {
         height: 10*$base-lh;
       }
@@ -197,7 +197,7 @@ ul {
     letter-spacing: 0;
   }
   body {
-    margin: 1*$base-lh $base-lh;
+    margin: 4*$base-lh $base-lh 2*$base-lh;
   }
   h3 {
     font-size: 1rem;
