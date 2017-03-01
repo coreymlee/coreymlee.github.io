@@ -92,7 +92,7 @@ ul {
     padding-right: 2.475rem;
     box-sizing: border-box; }
     #main_container #sidebar #portrait {
-      background: 65% 25% url("/images/cml.png");
+      background: 65% 20% url("/images/cml.png");
       background-size: cover;
       height: 20.625rem;
       margin-bottom: 1.65rem;
@@ -128,13 +128,16 @@ ul {
         margin-bottom: 2.475rem; } }
 @media screen and (max-width: 500px) {
   html {
-    font-size: 15.5px;
+    font-size: 14.5px;
     letter-spacing: 0; }
 
   body {
-    margin: 1.875rem 1.5rem; }
+    margin: 1.75rem 1.4rem; }
+
+  h3 {
+    font-size: 1rem; }
 
   #main_container #sidebar #portrait {
-    height: 15rem; } }
+    height: 14rem; } }
 
 /*# sourceMappingURL=home.css.map */
