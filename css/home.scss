@@ -190,9 +190,9 @@ ul {
   }
 }
 @media screen and (max-width: 500px) {
-  $base-lh: 1.6rem;
+  $base-lh: 1.55rem;
   html {
-    font-size: 15px;
+    font-size: 15.5px;
     line-height: $base-lh;
     letter-spacing: 0;
   }
