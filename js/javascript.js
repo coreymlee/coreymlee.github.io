@@ -10,7 +10,7 @@ $(document).ready(function() {
 	} else if (time >= 12 && time < 18) {
 		message = "Good Afternoon";
 	} else {
-		message = "About Me";
+		message = "About";
 	}
 	$("#greeting").html(message);
 /*

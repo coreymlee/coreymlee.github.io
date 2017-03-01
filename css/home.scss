@@ -6,7 +6,7 @@ $highlight-color: #dfdfdf;
 $base-lh: 1.65rem; /* line-height */
 
 $serif: "Merriweather", Georgia, Palatino, Times, serif;
-$sans-serif: "Proxima Nova", Helvetica Neue, Helvetica, Arial, sans-serif;
+$sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 html {
   margin: 0;
@@ -22,9 +22,9 @@ body {
 }
 
 h3 {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05*$base-lh;
+  font-size: 0.95rem;
+  font-weight:700;
+  letter-spacing: 0.03*$base-lh;
   font-family: $sans-serif;
   margin: 0 auto 1rem;
 }
@@ -135,12 +135,12 @@ ul {
   #sidebar {
     flex: 0 1 auto;
     width: 35%;
-    padding-right:40px;
+    padding-right:1.5*$base-lh;
     box-sizing: border-box;
     #portrait {
       background: 65% 25% url("/images/cml.png");
       background-size: cover;
-      height:310px;
+      height: 12.5*$base-lh;
       margin-bottom: $base-lh;
       -webkit-filter: contrast(90%) brightness(80%) sepia(80%) hue-rotate(315deg) opacity(90%) saturate(75%);
          -moz-filter: contrast(90%) brightness(80%) sepia(80%) hue-rotate(315deg) opacity(90%) saturate(75%);
@@ -159,7 +159,7 @@ ul {
     #sidebar {
       padding-right: $base-lh;
       #portrait {
-        height: 240px;
+        height: 10*$base-lh;
       }
     }
   }
@@ -183,27 +183,25 @@ ul {
       padding:0;
       #portrait {
         width: 100%;
-        height: 300px;
+        height: 12*$base-lh;
         margin-bottom: 1.5*$base-lh;
       }
     }
   }
 }
 @media screen and (max-width: 500px) {
+  $base-lh: 1.5rem;
   html {
-    font-size:15px;
+    font-size: 15.5px;
     letter-spacing: 0;
   }
   body {
-    margin:$base-lh;
-  }
-  h3 {
-    font-size: 0.85rem;
+    margin: 1.25*$base-lh $base-lh;
   }
   #main_container {
     #sidebar {
       #portrait {
-        height: 240px;
+        height: 10*$base-lh;
       }
     }
   }}
