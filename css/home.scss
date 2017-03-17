@@ -141,9 +141,9 @@ ul {
       background-size: cover;
       height: 12.5*$base-lh;
       margin-bottom: $base-lh;
-      -webkit-filter: contrast(90%) brightness(80%) sepia(80%) hue-rotate(315deg) opacity(90%) saturate(75%);
-         -moz-filter: contrast(90%) brightness(80%) sepia(80%) hue-rotate(315deg) opacity(90%) saturate(75%);
-              filter: contrast(90%) brightness(80%) sepia(90%) hue-rotate(315deg) opacity(90%) saturate(75%);
+      -webkit-filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
+         -moz-filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
+              filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
     }
   }
 }
