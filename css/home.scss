@@ -5,8 +5,8 @@ $highlight-color: #dfdfdf;
 
 $base-lh: 1.65rem; /* line-height */
 
-$serif: "Merriweather", Georgia, Palatino, Times, serif;
-$sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
+$serif: "Libre Baskerville", "Merriweather", Georgia, Palatino, Times, serif;
+$sans-serif: "Proxima Nova", Helvetica Neue, Helvetica, Arial, sans-serif;
 
 html {
   margin: 0;
@@ -14,6 +14,8 @@ html {
   font: 400 16px $serif;
   line-height: $base-lh;
   color: $primary-color;
+  letter-spacing: 0.005*$base-lh;
+
 }
 
 body {
@@ -21,9 +23,10 @@ body {
 }
 
 h3 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight:700;
-  letter-spacing: 0.03*$base-lh;
+  text-transform: uppercase;
+  letter-spacing: 0.05*$base-lh;
   font-family: $sans-serif;
   margin: 0 auto 1rem;
 }
