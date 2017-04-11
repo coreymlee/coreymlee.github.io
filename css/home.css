@@ -66,6 +66,8 @@ ul {
           display: inline; }
           #main_container #main section.personal li dt a {
             color: #333; }
+            #main_container #main section.personal li dt a:hover {
+              border-color: #333; }
           #main_container #main section.personal li dt:after {
             content: ", "; }
           #main_container #main section.personal li dt.hidelink a {
