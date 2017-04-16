@@ -6,7 +6,7 @@ $highlight-color: #dfdfdf;
 $base-lh: 1.65rem; /* line-height */
 
 $serif: "Libre Baskerville", "Merriweather", Georgia, Palatino, Times, serif;
-$sans-serif: "Proxima Nova", Helvetica Neue, Helvetica, Arial, sans-serif;
+$sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 html {
   margin: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight:700;
   text-transform: uppercase;
   letter-spacing: 0.05*$base-lh;
@@ -95,6 +95,9 @@ ul {
 
             a {
               color: #333;
+              &:hover {
+                  border-color: #333;
+              }
             }
             &:after {
               content: ", ";
