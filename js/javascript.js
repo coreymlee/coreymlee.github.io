@@ -6,11 +6,11 @@ $(document).ready(function() {
 	var message = "";
 
 	if (time >= 5 && time < 12) {
-		message = "Good Morning";
+		message = "Good morning.";
 	} else if (time >= 12 && time < 18) {
-		message = "Good Afternoon";
+		message = "Good afternoon.";
 	} else {
-		message = "About";
+		message = "Hey there.";
 	}
 	$("#greeting").html(message);
 /*
