@@ -11,7 +11,7 @@ $sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
 html {
   margin: 0;
   padding: 0;
-  font: 400 19.5px $serif;
+  font: 400 19px $serif;
   line-height: $base-lh;
   color: $primary-color;
   letter-spacing: 0.015*$base-lh;
@@ -83,10 +83,10 @@ ul {
 
     &#intro {
       ol {
-        padding: 0 0.75*$base-lh $base-lh;
-        margin:0;
+        padding: 0;
+        margin: $base-lh 0;
         li {
-          margin:0;
+          display: block;
         }
       }
 

@@ -2,7 +2,7 @@
 html {
   margin: 0;
   padding: 0;
-  font: 400 19.5px "Noto Serif", Georgia, Palatino, Times, serif;
+  font: 400 19px "Noto Serif", Georgia, Palatino, Times, serif;
   line-height: 1.6rem;
   color: #333;
   letter-spacing: 0.024rem; }
@@ -54,10 +54,10 @@ ul {
   #main_container section {
     margin: 1.6rem; }
     #main_container section#intro ol {
-      padding: 0 1.2rem 1.6rem;
-      margin: 0; }
+      padding: 0;
+      margin: 1.6rem 0; }
       #main_container section#intro ol li {
-        margin: 0; }
+        display: block; }
     #main_container section#personal li {
       display: inline;
       margin: 0;
