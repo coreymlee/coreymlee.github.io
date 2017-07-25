@@ -5,29 +5,29 @@ $highlight-color: #dfdfdf;
 
 $base-lh: 1.6rem; /* line-height */
 
-$serif: 'Noto Serif', Georgia, Palatino, Times, serif;
+$serif: 'Source Serif Pro', Georgia, Palatino, Times, serif;
 $sans-serif: Helvetica Neue, Helvetica, Arial, sans-serif;
 
 html {
   margin: 0;
   padding: 0;
-  font: 400 19px $serif;
+  font: 400 20.5px $serif;
   line-height: $base-lh;
   color: $primary-color;
-  letter-spacing: 0.015*$base-lh;
+  letter-spacing: 0.01*$base-lh;
 }
 
 body {
 }
 
 h3 {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight:700;
   text-transform: uppercase;
   letter-spacing: 0.06*$base-lh;
   font-family: $sans-serif;
   line-height: $base-lh;
-  margin: 0 auto 0.6*$base-lh;
+  margin: 0 0 0.5*$base-lh;
 }
 
 p, ul {
@@ -38,9 +38,10 @@ a {
   text-decoration: none;
   color: $secondary-color;
   border-bottom: 2px solid $highlight-color;
+  font-weight:600;
 
   &:hover {
-    border-color: $secondary-color;
+    border-color: pink;
   }
 }
 
@@ -69,19 +70,14 @@ ul {
   }
 }
 
-#greeting {
-  font-weight: 900;
-}
-
 #main_container {
-  margin: auto;
-  max-width: 860px;
-  margin: 1.5*$base-lh auto;
+  max-width: 720px;
+  margin: 2.5*$base-lh;
 
   section {
-    margin: $base-lh;
+    margin: $base-lh 0;
 
-    &#intro {
+    &#contact {
       ol {
         padding: 0;
         margin: $base-lh 0;
@@ -102,6 +98,7 @@ ul {
 
           a {
             color: #333;
+            font-weight:normal;
           }
           &:after {
             content: ", ";
@@ -141,87 +138,24 @@ ul {
   }
 }
 
-#main {
-  display: flex;
-  flex-direction: row;
-  .frame {
-    &:first-of-type { width:60%; }
-    &:last-of-type { width:40%; }
-  }
-
-}
-
-#portrait {
-  background: 65% 20% url("/images/cml.png");
-  background-size: cover;
-  height: 8*$base-lh;
-
-  -webkit-filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
-     -moz-filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
-          filter: contrast(70%) brightness(90%) sepia(80%) hue-rotate(330deg) opacity(100%) saturate(75%);
-}
-
 @media screen and (max-width: 860px) {
   $base-lh: 1.6rem;
   html {
-    font: 400 18.5px $serif;
+    font: 400 20px $serif;
     line-height: $base-lh;
   }
   #main_container {
-    margin: 0.5*$base-lh;
-
-    section {
-      margin: 0.75*$base-lh;
-
-      &#intro {
-        ol {
-          padding-top: 0;
-        }
-      }
-    }
+    margin: 1.5*$base-lh;
   }
 }
 
-@media screen and (max-width: 700px) {
-  html {
-  }
-  #main_container {
-    margin: 0.75*$base-lh;
-
-    section {
-      margin: $base-lh 0;
-    }
-  }
-
-  #main {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
-    .frame {
-      &:first-of-type { width: auto; }
-      &:last-of-type { width: auto; }
-    }
-  }
-  #portrait {
-    height: 11*$base-lh;
-    margin-bottom: 1.5*$base-lh;
-  }
-}
 @media screen and (max-width: 500px) {
   $base-lh: 1.6rem;
   html {
-    font-size: 16px;
+    font: 400 17.5px $serif;
     line-height: $base-lh;
   }
-  h3 {
-    font-size: 1rem;
-  }
-
   #main_container {
-    margin: 0.5*$base-lh;
-  }
-  #portrait {
-    height: 10*$base-lh;
+    margin: $base-lh;
   }
 }
