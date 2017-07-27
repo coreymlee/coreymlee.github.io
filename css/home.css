@@ -87,9 +87,9 @@ img.emoji {
 @media screen and (max-width: 500px) {
   html {
     font: 400 17.5px "Source Serif Pro", Georgia, Palatino, Times, serif;
-    line-height: 1.6rem; }
+    line-height: 1.8rem; }
 
   #main_container {
-    margin: 0.8rem; } }
+    margin: 0.9rem; } }
 
 /*# sourceMappingURL=home.css.map */
