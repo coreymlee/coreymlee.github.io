@@ -1,6 +1,6 @@
 $bg-color: #fff;
 $primary-color: #333;
-$secondary-color: blue;
+$secondary-color: #E91D95;
 $highlight-color: #dfdfdf;
 
 $base-lh: 1.6rem; /* line-height */
@@ -14,24 +14,22 @@ html {
   font: 400 20.5px $serif;
   line-height: $base-lh;
   color: $primary-color;
-  letter-spacing: 0.01*$base-lh;
+  letter-spacing: 0.007*$base-lh;
+  background-color: $bg-color;
 }
 
-body {
-}
+body {}
 
 h3 {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   font-weight:700;
-  text-transform: uppercase;
-  letter-spacing: 0.06*$base-lh;
-  font-family: $sans-serif;
   line-height: $base-lh;
   margin: 0 0 0.5*$base-lh;
 }
 
 p, ul {
   margin: 0 auto 0.6*$base-lh;
+  padding: 0;
 }
 
 a {
@@ -55,20 +53,7 @@ img.emoji {
   vertical-align: middle;
 }
 
-ul {
-  padding:0;
-  li {
-    display: block;
 
-    &.project {
-      margin: $base-lh 0;
-    }
-    dd {
-      margin:0;
-    }
-
-  }
-}
 
 #main_container {
   max-width: 720px;
@@ -80,7 +65,7 @@ ul {
     &#contact {
       ol {
         padding: 0;
-        margin: $base-lh 0;
+        margin: 0;
         li {
           display: block;
         }
