@@ -143,7 +143,7 @@ b {
 
 @media screen and (max-width: 900px) {
   #main_container {
-    margin: 5*$gutter-size auto $gutter-size;
+    margin: 4*$gutter-size auto $gutter-size;
   }
 }
 
@@ -164,7 +164,7 @@ b {
     line-height: 2.0rem;
 
     section {
-      margin: 2*$gutter-size auto;
+      margin: 0 auto 2*$gutter-size;
 
       &#intro {
         width: auto;
@@ -175,7 +175,6 @@ b {
         width: auto;
         font-size: 16px;
         line-height: $base-lh;
-        margin-top: 2*$gutter-size;
 
         .container {
 
@@ -197,7 +196,7 @@ b {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
 
   #header {
     .head_part {
@@ -215,15 +214,13 @@ b {
     }
   }
 
-
   #main_container {
     font-size: 17px;
     line-height: 1.9rem;
+    margin-top: 6*$gutter-size;
 
     section {
-      margin: 2*$gutter-size auto 0;
       padding: 0;
-
 
       &#intro {
         p#contact {
