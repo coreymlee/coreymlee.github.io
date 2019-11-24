@@ -4,8 +4,8 @@ $bg-color: #D3E3E2;
 $text-color: rgba(50,50,50,0.8);
 $highlight-color: #1BB0F1;
 
-$base-type-size: 16px;
-$base-lh: 1.8rem;
+$base-type-size: 17px;
+$base-lh: 28px;
 $serif: 'Merriweather', Palatino, Georgia, Times, serif;
 $sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
@@ -30,28 +30,12 @@ body {
   min-height:100%;
 }
 
-h3 {
-  font-weight: 800;
-  font-size: 2.5rem;
-  font-style: normal;
-  line-height: 2*$base-lh;
-  letter-spacing: 0.2pt;
-  margin: 0 0 $base-lh;
-  padding: 0;
-  display:none;
-}
-
-h4 {
-  font-weight: 800;
-  font-size: 14px;
-  font-style: normal;
-  margin:0 0;
-  padding:0;
-  display:block;
-}
-
 p {
   margin: 0 0 $base-lh*.7;
+}
+
+a {
+  color: $text-color;
 }
 
 a.email {
@@ -68,48 +52,13 @@ a.email {
 b {
   font-weight: 800;
 }
-#header {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  font-weight: 800;
 
-  .head_part {
-    padding: $gutter-size/2 $gutter-size;
-
-    &#head_left {
-      width: 33%;
-      opacity: 0.4;
-
-      #greeting {
-      }
-    }
-    &#head_right {
-      width: 67%;
-      text-align: right;
-    }
-    a {
-      margin-left: $base-lh/2;
-    }
-    img {
-      width: $base-lh;
-      margin-bottom: 6px;
-      opacity: 0.6;
-      vertical-align:middle;
-
-      &:hover {
-        opacity: 0.3;
-      }
-    }
-  }
-}
 #main_container {
   display: flex;
   flex-direction: row;
   min-height:100%;
   max-width: 860px;
   margin: 6*$gutter-size auto $gutter-size;
-  font-size: 17px;
 
   section {
     padding: $gutter-size;
@@ -118,25 +67,31 @@ b {
       width:62%;
 
       p#contact {
-        display:none;
+          a {
+            margin-right: $base-lh/2;
+          }
+          img {
+            width: $base-lh*.8;
+            margin-bottom: 6px;
+            opacity: 0.6;
+            vertical-align:middle;
+      
+            &:hover {
+              opacity: 0.3;
+            }
+          }
       }
     }
     &#sidebar {
       width: 38%;
-      font-size: 16px;
+      font-size: 15px;
       font-style: normal;
-      line-height: $base-lh*.9;
 
       img#profile {
         width:100%;
         opacity: 0.9;
         margin-bottom: $base-lh;
       }
-
-      a {
-        color: $text-color;
-      }
-
     }
   }
 }
@@ -148,20 +103,22 @@ b {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    padding: $gutter-size;
+  $base-type-size: 17.5px;
+  $base-lh: 32px;
+  
+  html {
+    font-size: $base-type-size;
+    line-height: $base-lh;
   }
 
-  h4 {
-    font-size: initial;
+  body {
+    padding: $gutter-size;
   }
 
   #main_container {
     flex-direction: column;
     max-width: 540px;
     padding: 0;
-    font-size: 17.5px;
-    line-height: 2.0rem;
 
     section {
       margin: 0 auto 2*$gutter-size;
@@ -173,7 +130,7 @@ b {
       &#sidebar {
         order: 3;
         width: auto;
-        font-size: 16px;
+        font-size: $base-type-size;
         line-height: $base-lh;
 
         .container {
@@ -197,36 +154,20 @@ b {
 }
 
 @media screen and (max-width: 560px) {
-
-  #header {
-    .head_part {
-      padding: 0;
-
-      &#head_left {
-        width: 65%;
-      }
-      &#head_right {
-        width: 35%;
-      }
-      a.email {
-        display:none;
-      }
-    }
+  $base-type-size: 17px;
+  $base-lh: 28px;
+  
+  html {
+    font-size: $base-type-size;
+    line-height: $base-lh;
   }
 
   #main_container {
-    font-size: 17px;
-    line-height: 1.9rem;
     margin-top: 6*$gutter-size;
 
     section {
       padding: 0;
 
-      &#intro {
-        p#contact {
-          display:block;
-        }
-      }
       &#sidebar {
         .container {
           display: initial;
