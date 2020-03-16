@@ -131,12 +131,16 @@ b {
     margin: $base-lh*0.5;
   }
 
+  p {
+    margin: 0 0 $base-lh*0.7;
+  }
+  
   #main_container {
     margin: 0;
 
     #image {
       margin-right: 0;
-      margin-bottom: $base-lh;
+      margin-bottom: $base-lh*0.7;
       width: $base-lh*5;
       height: $base-lh*5;
     }

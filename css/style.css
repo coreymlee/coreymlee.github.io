@@ -82,11 +82,14 @@ b {
     line-height: 26px;
     margin: 13px; }
 
+  p {
+    margin: 0 0 18.2px; }
+
   #main_container {
     margin: 0; }
     #main_container #image {
       margin-right: 0;
-      margin-bottom: 26px;
+      margin-bottom: 18.2px;
       width: 130px;
       height: 130px; } }
 
