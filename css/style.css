@@ -79,15 +79,15 @@ b {
 @media screen and (max-width: 560px) {
   html {
     font-size: 18px;
-    line-height: 26px;
-    margin: 26px; }
+    line-height: 24px;
+    margin: 12px; }
 
   #main_container {
     margin: 0; }
     #main_container #image {
       margin-right: 0;
-      margin-bottom: 26px;
-      width: 104px;
-      height: 104px; } }
+      margin-bottom: 24px;
+      width: 96px;
+      height: 96px; } }
 
 /*# sourceMappingURL=style.css.map */

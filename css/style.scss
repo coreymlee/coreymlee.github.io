@@ -123,12 +123,12 @@ b {
 
 @media screen and (max-width: 560px) {
   $base-type-size: 18px;
-  $base-lh: 26px;
+  $base-lh: 24px;
 
   html {
     font-size: $base-type-size;
     line-height: $base-lh;
-    margin: $base-lh;
+    margin: $base-lh*0.5;
   }
 
   #main_container {
