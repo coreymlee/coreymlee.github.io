@@ -70,23 +70,24 @@ b {
       flex-direction: column; }
     #main_container #image {
       margin-right: 0;
-      width: 192px;
-      height: 192px; }
+      width: 160px;
+      height: 160px; }
     #main_container #contact li {
       display: block; }
       #main_container #contact li:after {
         content: none; } }
 @media screen and (max-width: 560px) {
   html {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 30px; }
+    font-size: 18px;
+    line-height: 26px;
+    margin: 26px; }
 
   #main_container {
     margin: 0; }
     #main_container #image {
       margin-right: 0;
-      width: 150px;
-      height: 150px; } }
+      margin-bottom: 26px;
+      width: 104px;
+      height: 104px; } }
 
 /*# sourceMappingURL=style.css.map */
