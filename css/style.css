@@ -78,16 +78,16 @@ b {
         content: none; } }
 @media screen and (max-width: 560px) {
   html {
-    font-size: 18px;
-    line-height: 24px;
-    margin: 12px; }
+    font-size: 20px;
+    line-height: 26px;
+    margin: 13px; }
 
   #main_container {
     margin: 0; }
     #main_container #image {
       margin-right: 0;
-      margin-bottom: 24px;
-      width: 96px;
-      height: 96px; } }
+      margin-bottom: 26px;
+      width: 130px;
+      height: 130px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -122,8 +122,8 @@ b {
 }
 
 @media screen and (max-width: 560px) {
-  $base-type-size: 18px;
-  $base-lh: 24px;
+  $base-type-size: 20px;
+  $base-lh: 26px;
 
   html {
     font-size: $base-type-size;
@@ -137,8 +137,8 @@ b {
     #image {
       margin-right: 0;
       margin-bottom: $base-lh;
-      width: $base-lh*4;
-      height: $base-lh*4;
+      width: $base-lh*5;
+      height: $base-lh*5;
     }
   }
 }
