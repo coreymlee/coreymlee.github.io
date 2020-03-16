@@ -6,12 +6,10 @@ $base-type-size: 22px;
 $base-lh: 32px;
 $sans-serif:  -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 $serif: "EB Garamond", -apple-system, serif;
-$photo-width: 230px;
-
-$gutter-size: $base-lh;
+$photo-width: $base-lh*8;
 
 html {
-  margin: $base-lh;
+  margin: $base-lh*1.5;
   font-family: $sans-serif;
   font-size: $base-type-size;
   font-style: normal;
@@ -19,14 +17,13 @@ html {
   line-height: $base-lh;
   color: $text-color;
   background-color: $bg-color;
-  height: calc(100% - 2*#{$base-lh});
+  height: calc(100% - 3*#{$base-lh});
   display: flex;
   flex-direction: row;
 }
 
 body {
   margin: 0 auto;
-  padding: $gutter-size;
   display: flex;
   flex-direction: row;
 }
@@ -43,7 +40,6 @@ a {
   text-decoration: none;
   font-weight: 600;
   border-bottom: 3px solid #fff;
-  transition: 0.3s;
 
   &:hover {
     color: #000;
@@ -69,7 +65,7 @@ b {
     width: $photo-width;
     height: $photo-width;
     border-radius: 100%;
-    margin-right: 2*$base-lh;
+    margin-right: 1.5*$base-lh;
     margin-bottom: $base-lh;
     background-image: url("../images/corey.jpg");
     background-position: center;
@@ -81,68 +77,44 @@ b {
     max-width: 540px;
   }
 
-  p#contact {
-      img {
-        width: $base-lh*.8;
-        margin-bottom: 6px;
-        
-        vertical-align:middle;
-  
-        &:hover {
-          opacity: 0.3;
-        }
+  #contact {
+    li {
+      display: inline-block;
+
+      &:after{
+        content: "/";
+        margin: 0 $base-lh*.5;
       }
+      &:last-child:after {
+        content: none;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 900px) {
-  #main_container {
-    margin: 4*$gutter-size auto $gutter-size;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  $base-type-size: 17.5px;
-  $base-lh: 32px;
   
-  html {
-    font-size: $base-type-size;
-    line-height: $base-lh;
-  }
-
-  body {
-    padding: $gutter-size;
-  }
-
   #main_container {
     flex-direction: column;
     max-width: 540px;
     padding: 0;
 
-    section {
-      margin: 0 auto 2*$gutter-size;
-
-      &#intro {
-        width: auto;
-        order: 1;
-      }
-      &#sidebar {
-        order: 3;
-        width: auto;
-        font-size: $base-type-size;
-        line-height: $base-lh;
-
-        .container {
-
-          #image {
-            width: 40%;
-            float: right;
-            margin-left: $gutter-size;
-
-            img {
-              margin-bottom: $base-lh/2;
-            }
-          }
+    #container {
+      display:flex;
+      flex-direction: column;
+    }
+    #image {
+      margin-right: 0;
+      width: $base-lh*6;
+      height: $base-lh*6;
+    }
+  
+    #contact {
+      li {
+        display: block;
+  
+        &:after{
+          content: none;
         }
       }
     }
@@ -150,30 +122,22 @@ b {
 }
 
 @media screen and (max-width: 560px) {
-  $base-type-size: 17px;
-  $base-lh: 28px;
-  
+  $base-type-size: 20px;
+  $base-lh: 30px;
+
   html {
     font-size: $base-type-size;
     line-height: $base-lh;
+    margin: $base-lh;
   }
 
   #main_container {
-    margin-top: 6*$gutter-size;
+    margin: 0;
 
-    section {
-      padding: 0;
-
-      &#sidebar {
-        .container {
-          display: initial;
-
-          #image {
-            width: auto;
-            margin: 0;
-          }
-        }
-      }
+    #image {
+      margin-right: 0;
+      width: $base-lh*5;
+      height: $base-lh*5;
     }
   }
 }

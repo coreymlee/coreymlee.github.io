@@ -1,5 +1,5 @@
 html {
-  margin: 32px;
+  margin: 48px;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
   font-size: 22px;
   font-style: normal;
@@ -7,13 +7,12 @@ html {
   line-height: 32px;
   color: #333;
   background-color: #d4d4c8;
-  height: calc(100% - 2*32px);
+  height: calc(100% - 3*32px);
   display: flex;
   flex-direction: row; }
 
 body {
   margin: 0 auto;
-  padding: 32px;
   display: flex;
   flex-direction: row; }
 
@@ -27,8 +26,7 @@ a {
   color: #333;
   text-decoration: none;
   font-weight: 600;
-  border-bottom: 3px solid #fff;
-  transition: 0.3s; }
+  border-bottom: 3px solid #fff; }
   a:hover {
     color: #000;
     border-bottom: 3px solid #fffc5d; }
@@ -43,10 +41,10 @@ b {
     display: flex;
     align-items: top; }
   #main_container #image {
-    width: 230px;
-    height: 230px;
+    width: 256px;
+    height: 256px;
     border-radius: 100%;
-    margin-right: 64px;
+    margin-right: 48px;
     margin-bottom: 32px;
     background-image: url("../images/corey.jpg");
     background-position: center;
@@ -54,57 +52,41 @@ b {
   #main_container #content {
     flex: 1;
     max-width: 540px; }
-  #main_container p#contact img {
-    width: 25.6px;
-    margin-bottom: 6px;
-    vertical-align: middle; }
-    #main_container p#contact img:hover {
-      opacity: 0.3; }
+  #main_container #contact li {
+    display: inline-block; }
+    #main_container #contact li:after {
+      content: "/";
+      margin: 0 16px; }
+    #main_container #contact li:last-child:after {
+      content: none; }
 
 @media screen and (max-width: 900px) {
-  #main_container {
-    margin: 128px auto 32px; } }
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 17.5px;
-    line-height: 32px; }
-
-  body {
-    padding: 32px; }
-
   #main_container {
     flex-direction: column;
     max-width: 540px;
     padding: 0; }
-    #main_container section {
-      margin: 0 auto 64px; }
-      #main_container section#intro {
-        width: auto;
-        order: 1; }
-      #main_container section#sidebar {
-        order: 3;
-        width: auto;
-        font-size: 17.5px;
-        line-height: 32px; }
-        #main_container section#sidebar .container #image {
-          width: 40%;
-          float: right;
-          margin-left: 32px; }
-          #main_container section#sidebar .container #image img {
-            margin-bottom: 16px; } }
+    #main_container #container {
+      display: flex;
+      flex-direction: column; }
+    #main_container #image {
+      margin-right: 0;
+      width: 192px;
+      height: 192px; }
+    #main_container #contact li {
+      display: block; }
+      #main_container #contact li:after {
+        content: none; } }
 @media screen and (max-width: 560px) {
   html {
-    font-size: 17px;
-    line-height: 28px; }
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px; }
 
   #main_container {
-    margin-top: 192px; }
-    #main_container section {
-      padding: 0; }
-      #main_container section#sidebar .container {
-        display: initial; }
-        #main_container section#sidebar .container #image {
-          width: auto;
-          margin: 0; } }
+    margin: 0; }
+    #main_container #image {
+      margin-right: 0;
+      width: 150px;
+      height: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
