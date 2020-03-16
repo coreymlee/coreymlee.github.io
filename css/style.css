@@ -16,8 +16,9 @@ body {
   display: flex;
   flex-direction: row; }
 
-p {
-  margin: 0 0 22.4px; }
+p, ul {
+  margin: 0 0 20.8px;
+  padding: 0; }
 
 h1 {
   font: 900 40px/32px "EB Garamond", -apple-system, serif; }
@@ -29,7 +30,7 @@ a {
   border-bottom: 3px solid #fff; }
   a:hover {
     color: #000;
-    border-bottom: 3px solid #fffc5d; }
+    border-color: #fffc5d; }
 
 b {
   font-weight: 400; }
@@ -45,7 +46,7 @@ b {
     height: 256px;
     border-radius: 100%;
     margin-right: 48px;
-    margin-bottom: 32px;
+    margin-bottom: 20.8px;
     background-image: url("../images/corey.jpg");
     background-position: center;
     background-size: cover; }
@@ -79,18 +80,18 @@ b {
 @media screen and (max-width: 560px) {
   html {
     font-size: 20px;
-    line-height: 26px;
-    margin: 13px; }
+    line-height: 28px;
+    margin: 28px; }
 
-  p {
+  p, ul {
     margin: 0 0 18.2px; }
 
   #main_container {
     margin: 0; }
     #main_container #image {
       margin-right: 0;
-      margin-bottom: 18.2px;
-      width: 130px;
-      height: 130px; } }
+      margin-bottom: 56px;
+      width: 140px;
+      height: 140px; } }
 
 /*# sourceMappingURL=style.css.map */

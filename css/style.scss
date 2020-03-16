@@ -28,8 +28,9 @@ body {
   flex-direction: row;
 }
 
-p {
-  margin: 0 0 $base-lh*.7;
+p, ul {
+  margin: 0 0 $base-lh*.65;
+  padding: 0;
 }
 
 h1 {
@@ -43,9 +44,8 @@ a {
 
   &:hover {
     color: #000;
-    border-bottom: 3px solid $highlight-color;
+    border-color: $highlight-color;
   }
-
 }
 
 b {
@@ -66,7 +66,7 @@ b {
     height: $photo-width;
     border-radius: 100%;
     margin-right: 1.5*$base-lh;
-    margin-bottom: $base-lh;
+    margin-bottom: $base-lh*0.65;
     background-image: url("../images/corey.jpg");
     background-position: center;
     background-size: cover;
@@ -123,16 +123,16 @@ b {
 
 @media screen and (max-width: 560px) {
   $base-type-size: 20px;
-  $base-lh: 26px;
+  $base-lh: 28px;
 
   html {
     font-size: $base-type-size;
     line-height: $base-lh;
-    margin: $base-lh*0.5;
+    margin: $base-lh;
   }
 
-  p {
-    margin: 0 0 $base-lh*0.7;
+  p, ul {
+    margin: 0 0 $base-lh*0.65;
   }
   
   #main_container {
@@ -140,7 +140,7 @@ b {
 
     #image {
       margin-right: 0;
-      margin-bottom: $base-lh*0.7;
+      margin-bottom: $base-lh*2;
       width: $base-lh*5;
       height: $base-lh*5;
     }
