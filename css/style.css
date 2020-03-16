@@ -1,83 +1,83 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap");
 html {
-  margin: 0;
-  padding: 0;
-  font-family: "Merriweather", Palatino, Georgia, Times, serif;
-  font-size: 17px;
+  margin: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font-size: 22px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
-  color: rgba(50, 50, 50, 0.8);
-  background-color: #D3E3E2; }
+  font-weight: 400;
+  line-height: 32px;
+  color: #333;
+  background-color: #d4d4c8;
+  height: calc(100% - 2*32px);
+  display: flex;
+  flex-direction: row; }
 
 body {
-  margin: 0;
-  padding: 21px;
-  height: 100%;
-  min-height: 100%; }
+  margin: 0 auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: row; }
 
 p {
-  margin: 0 0 19.6px; }
+  margin: 0 0 22.4px; }
+
+h1 {
+  font: 900 40px/32px "EB Garamond", -apple-system, serif; }
 
 a {
-  color: rgba(50, 50, 50, 0.8); }
-
-a.email {
+  color: #333;
   text-decoration: none;
-  color: #1BB0F1;
-  font-weight: 800;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
-  a.email:hover {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  transition: 0.3s; }
+  a:hover {
+    color: #000;
+    border-bottom: 3px solid #fffc5d; }
 
 b {
-  font-weight: 800; }
+  font-weight: 400; }
 
 #main_container {
-  display: flex;
-  flex-direction: row;
-  min-height: 100%;
-  max-width: 860px;
-  margin: 126px auto 21px; }
-  #main_container section {
-    padding: 21px; }
-    #main_container section#intro {
-      width: 62%; }
-      #main_container section#intro p#contact a {
-        margin-right: 14px; }
-      #main_container section#intro p#contact img {
-        width: 22.4px;
-        margin-bottom: 6px;
-        opacity: 0.6;
-        vertical-align: middle; }
-        #main_container section#intro p#contact img:hover {
-          opacity: 0.3; }
-    #main_container section#sidebar {
-      width: 38%;
-      font-size: 15px;
-      font-style: normal; }
-      #main_container section#sidebar img#profile {
-        width: 100%;
-        opacity: 0.9;
-        margin-bottom: 28px; }
+  margin: auto; }
+  #main_container #container {
+    width: 100%;
+    display: flex;
+    align-items: top; }
+  #main_container #image {
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    margin-right: 64px;
+    margin-bottom: 32px;
+    background-image: url("../images/corey.jpg");
+    background-position: center;
+    background-size: cover; }
+  #main_container #content {
+    flex: 1;
+    max-width: 540px; }
+  #main_container p#contact img {
+    width: 25.6px;
+    margin-bottom: 6px;
+    vertical-align: middle; }
+    #main_container p#contact img:hover {
+      opacity: 0.3; }
 
 @media screen and (max-width: 900px) {
   #main_container {
-    margin: 84px auto 21px; } }
+    margin: 128px auto 32px; } }
 @media screen and (max-width: 800px) {
   html {
     font-size: 17.5px;
     line-height: 32px; }
 
   body {
-    padding: 21px; }
+    padding: 32px; }
 
   #main_container {
     flex-direction: column;
     max-width: 540px;
     padding: 0; }
     #main_container section {
-      margin: 0 auto 42px; }
+      margin: 0 auto 64px; }
       #main_container section#intro {
         width: auto;
         order: 1; }
@@ -89,7 +89,7 @@ b {
         #main_container section#sidebar .container #image {
           width: 40%;
           float: right;
-          margin-left: 21px; }
+          margin-left: 32px; }
           #main_container section#sidebar .container #image img {
             margin-bottom: 16px; } }
 @media screen and (max-width: 560px) {
@@ -98,15 +98,13 @@ b {
     line-height: 28px; }
 
   #main_container {
-    margin-top: 126px; }
+    margin-top: 192px; }
     #main_container section {
       padding: 0; }
       #main_container section#sidebar .container {
         display: initial; }
         #main_container section#sidebar .container #image {
           width: auto;
-          margin: 0; }
-        #main_container section#sidebar .container #work {
-          width: auto; } }
+          margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */

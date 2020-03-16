@@ -1,98 +1,97 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
+$bg-color: #d4d4c8;
+$text-color: #333;
+$highlight-color: #fffc5d;
 
-$bg-color: #D3E3E2;
-$text-color: rgba(50,50,50,0.8);
-$highlight-color: #1BB0F1;
+$base-type-size: 22px;
+$base-lh: 32px;
+$sans-serif:  -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+$serif: "EB Garamond", -apple-system, serif;
+$photo-width: 230px;
 
-$base-type-size: 17px;
-$base-lh: 28px;
-$serif: 'Merriweather', Palatino, Georgia, Times, serif;
-$sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-$gutter-size: $base-lh*.75;
+$gutter-size: $base-lh;
 
 html {
-  margin: 0;
-  padding: 0;
-  font-family: $serif;
+  margin: $base-lh;
+  font-family: $sans-serif;
   font-size: $base-type-size;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: $base-lh;
   color: $text-color;
   background-color: $bg-color;
+  height: calc(100% - 2*#{$base-lh});
+  display: flex;
+  flex-direction: row;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: $gutter-size;
-  height: 100%;
-  min-height:100%;
+  display: flex;
+  flex-direction: row;
 }
 
 p {
   margin: 0 0 $base-lh*.7;
 }
 
+h1 {
+  font: 900 40px/32px $serif;
+}
 a {
   color: $text-color;
-}
-
-a.email {
   text-decoration: none;
-  color: $highlight-color;
-  font-weight: 800;
-  border-bottom: 2px solid rgba(0,0,0,0.1);
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  transition: 0.3s;
 
   &:hover {
-    border-bottom: 2px solid rgba(0,0,0,0.1);
+    color: #000;
+    border-bottom: 3px solid $highlight-color;
   }
+
 }
 
 b {
-  font-weight: 800;
+  font-weight: 400;
 }
 
 #main_container {
-  display: flex;
-  flex-direction: row;
-  min-height:100%;
-  max-width: 860px;
-  margin: 6*$gutter-size auto $gutter-size;
+  margin: auto;
 
-  section {
-    padding: $gutter-size;
+  #container {
+    width: 100%;
+    display:flex;
+    align-items: top;
+  }
 
-    &#intro {
-      width:62%;
+  #image {
+    width: $photo-width;
+    height: $photo-width;
+    border-radius: 100%;
+    margin-right: 2*$base-lh;
+    margin-bottom: $base-lh;
+    background-image: url("../images/corey.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 
-      p#contact {
-          a {
-            margin-right: $base-lh/2;
-          }
-          img {
-            width: $base-lh*.8;
-            margin-bottom: 6px;
-            opacity: 0.6;
-            vertical-align:middle;
-      
-            &:hover {
-              opacity: 0.3;
-            }
-          }
+  #content {
+    flex: 1;
+    max-width: 540px;
+  }
+
+  p#contact {
+      img {
+        width: $base-lh*.8;
+        margin-bottom: 6px;
+        
+        vertical-align:middle;
+  
+        &:hover {
+          opacity: 0.3;
+        }
       }
-    }
-    &#sidebar {
-      width: 38%;
-      font-size: 15px;
-      font-style: normal;
-
-      img#profile {
-        width:100%;
-        opacity: 0.9;
-        margin-bottom: $base-lh;
-      }
-    }
   }
 }
 
@@ -144,10 +143,7 @@ b {
               margin-bottom: $base-lh/2;
             }
           }
-          #work {
-          }
         }
-
       }
     }
   }
@@ -175,9 +171,6 @@ b {
           #image {
             width: auto;
             margin: 0;
-          }
-          #work {
-            width: auto;
           }
         }
       }
