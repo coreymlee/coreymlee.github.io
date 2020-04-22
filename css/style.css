@@ -50,6 +50,10 @@ b {
     background-image: url("../images/corey.jpg");
     background-position: center;
     background-size: cover; }
+  #main_container img#earth {
+    height: 1em;
+    vertical-align: center;
+    margin-left: .2em; }
   #main_container #content {
     flex: 1;
     max-width: 540px; }
