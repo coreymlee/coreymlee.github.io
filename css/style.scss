@@ -1,7 +1,7 @@
-$bg-color: #fff;
-$text-color: #12326d;
+$bg-color: #f1ebeb;
+$text-color: #444;
 $link-color: $text-color;
-$highlight-color: #c5e2d4;
+$highlight-color: $text-color;
 
 $base-type-size: 24px;
 $base-lh: 32px;
@@ -36,7 +36,7 @@ p, ul {
 ul {
   list-style-type: circle;
   li {
-    margin-bottom: $base-lh*.5;
+    margin-bottom: $base-lh*.65;
     margin-left: -$base-lh/2;
     padding-left: $base-lh/2;
 
@@ -57,14 +57,16 @@ h3 {
   font-family: $sans-serif;
   font-weight:700;
   font-size:18px;
-  margin-bottom: $base-lh*.5;
+  line-height: 24px;
+  margin-bottom: $base-lh*.65;
+  letter-spacing: 0.02em;
 }
 
 a {
   font-weight:500;
   color: $link-color;
   text-decoration-color: $highlight-color;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 1px;
   transition: 0.5s;
 
   &:hover {
