@@ -1,148 +1,117 @@
-$bg-color: #d4d4c8;
-$text-color: #333;
-$highlight-color: #fffc5d;
+$bg-color: #fff;
+$text-color: #12326d;
+$link-color: #043ea5;
+$highlight-color: #c5e2d4;
 
-$base-type-size: 22px;
+$base-type-size: 24px;
 $base-lh: 32px;
-$sans-serif:  -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+$sans-serif:  Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 $serif: "EB Garamond", -apple-system, serif;
-$photo-width: $base-lh*8;
+$photo-width: $base-lh*1;
 
 html {
-  margin: $base-lh*1.5;
-  font-family: $sans-serif;
+  margin: 0;
+  font-family: $serif;
   font-size: $base-type-size;
   font-style: normal;
-  font-weight: 400;
   line-height: $base-lh;
   color: $text-color;
   background-color: $bg-color;
-  height: calc(100% - 3*#{$base-lh});
-  display: flex;
-  flex-direction: row;
+  min-height:100%;
+  height:100%;
 }
 
 body {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
+  margin: $base-lh*2 $base-lh*4;
+  min-height: calc(100% - #{$base-lh*4});
+  display:flex;
+  align-items: center;
+  max-width: 640px;
 }
 
 p, ul {
-  margin: 0 0 $base-lh*.65;
-  padding: 0;
+  margin: 0 0 $base-lh*1.5;
+  padding:0;
+}
+ul {
+  list-style-type: circle;
+  li {
+    margin-bottom: $base-lh*.5;
+    margin-left: -$base-lh/2;
+    padding-left: $base-lh/2;
+
+  }
+  ::marker {
+    font-size: $base-type-size*.75;
+  }
 }
 
 h1 {
-  font: 900 40px/32px $serif;
+  font-weight: 900;
+  font-family: $serif;
+  font-size: $base-type-size*2.5;
+  line-height: $base-lh*2;
 }
+
+h3 {
+  font-family: $sans-serif;
+  font-weight:700;
+  font-size:18px;
+  margin-bottom: $base-lh*.5;
+}
+
 a {
-  color: $text-color;
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 3px solid #fff;
+  font-weight:600;
+  color: $link-color;
+  text-decoration-color: $highlight-color;
+  text-decoration-thickness: 3px;
+  transition: 0.5s;
 
   &:hover {
-    color: #000;
-    border-color: $highlight-color;
-  }
-}
-
-b {
-  font-weight: 400;
+    text-decoration-color: lightsalmon;
+    text-decoration-thickness: 2px;
+    }
 }
 
 #main_container {
-  margin: auto;
 
-  #container {
-    width: 100%;
-    display:flex;
-    align-items: top;
-  }
-
-  #image {
+  #silhouette {
     width: $photo-width;
     height: $photo-width;
-    border-radius: 100%;
-    margin-right: 1.5*$base-lh;
-    margin-bottom: $base-lh*0.65;
-    background-image: url("../images/corey.jpg");
-    background-position: center;
-    background-size: cover;
+    fill: $text-color;
+    margin-bottom: $base-lh*.75;
+    display:none;
   }
 
-  #content {
-    flex: 1;
-    max-width: 540px;
+  img#earth {
+    height: 1em;
+    vertical-align: center;
+    margin-left: .2em;
+    position: relative;
+    top: 3px;
   }
 
-  #contact {
+}
+
+@media screen and (max-width: 820px) {  
+  body {
+    margin: $base-lh*3 $base-lh*3;
+    min-height: calc(100% - #{$base-lh*6});
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    margin: $base-lh*1.5 $base-lh*1.5;
+    min-height: calc(100% - #{$base-lh*3});
+    max-width: none;
+  }
+
+  ul {
+    list-style-type: none;
     li {
-      display: inline-block;
-
-      &:after{
-        content: "/";
-        margin: 0 $base-lh*.5;
-      }
-      &:last-child:after {
-        content: none;
-      }
+      margin-bottom: $base-lh*.75;
     }
-  }
-}
-
-@media screen and (max-width: 900px) {
-  
-  #main_container {
-    flex-direction: column;
-    max-width: 540px;
-    padding: 0;
-
-    #container {
-      display:flex;
-      flex-direction: column;
-    }
-    #image {
-      margin-right: 0;
-      width: $base-lh*5;
-      height: $base-lh*5;
-    }
-  
-    #contact {
-      li {
-        display: block;
-  
-        &:after{
-          content: none;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 560px) {
-  $base-type-size: 20px;
-  $base-lh: 28px;
-
-  html {
-    font-size: $base-type-size;
-    line-height: $base-lh;
-    margin: $base-lh;
-  }
-
-  p, ul {
-    margin: 0 0 $base-lh*0.65;
-  }
-  
-  #main_container {
-    margin: 0;
-
-    #image {
-      margin-right: 0;
-      margin-bottom: $base-lh*2;
-      width: $base-lh*5;
-      height: $base-lh*5;
-    }
-  }
+  }  
 }
