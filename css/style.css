@@ -42,12 +42,13 @@ h3 {
   margin-bottom: 16px; }
 
 a {
-  font-weight: 600;
-  color: #043ea5;
+  font-weight: 500;
+  color: #12326d;
   text-decoration-color: #c5e2d4;
   text-decoration-thickness: 3px;
   transition: 0.5s; }
   a:hover {
+    color: #061f4e;
     text-decoration-color: lightsalmon;
     text-decoration-thickness: 2px; }
 
@@ -71,7 +72,7 @@ a {
     max-width: none; } }
 @media screen and (max-width: 640px) {
   body {
-    margin: 32px 32px;
+    margin: 48px 32px;
     min-height: calc(100% - 64px);
     max-width: none; }
 
