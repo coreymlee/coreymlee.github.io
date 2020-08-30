@@ -66,13 +66,12 @@ a {
   font-weight:500;
   color: $link-color;
   text-decoration-color: $highlight-color;
-  text-decoration-thickness: 1px;
-  transition: 0.5s;
+  text-decoration-thickness: .75px;
 
   &:hover {
-    color: #061f4e;
-    text-decoration-color: lightsalmon;
-    text-decoration-thickness: 2px;
+    color: #000;
+    text-decoration-color: black;
+    text-decoration-thickness: 1.5px;
     }
 }
 
