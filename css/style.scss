@@ -4,7 +4,7 @@ $link-color: $text-color;
 $highlight-color: $text-color;
 
 $base-type-size: 24px;
-$base-lh: 32px;
+$base-lh: 30px;
 $sans-serif:  Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 $serif: Nunito, "EB Garamond", -apple-system, serif;
 $photo-width: $base-lh*1;
@@ -104,7 +104,7 @@ a {
   }
 }
 
-@media screen and (max-width: 640px) { 
+@media screen and (max-width: 640px) {
   body {
     margin: $base-lh*.75 $base-lh*.75;
     min-height: calc(100% - #{$base-lh*1.5});
