@@ -71,8 +71,8 @@ a {
     max-width: none; } }
 @media screen and (max-width: 640px) {
   body {
-    margin: 48px 48px;
-    min-height: calc(100% - 96px);
+    margin: 32px 32px;
+    min-height: calc(100% - 64px);
     max-width: none; }
 
   ul {
