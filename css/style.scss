@@ -1,4 +1,4 @@
-$bg-color: #f1ebeb;
+$bg-color: #f5e9e9;
 $text-color: #444;
 $link-color: $text-color;
 $highlight-color: $text-color;
@@ -41,7 +41,7 @@ ul {
 
   }
   ::marker {
-    font-size: $base-type-size*.75;
+    font-size: $base-type-size*.65;
   }
 }
 
@@ -65,13 +65,10 @@ h3 {
 a {
   font-weight:500;
   color: $link-color;
-  text-decoration-color: $highlight-color;
-  text-decoration-thickness: .75px;
 
   &:hover {
     color: #000;
-    text-decoration-color: black;
-    text-decoration-thickness: 1.5px;
+    text-decoration-color: #000;
     }
 }
 
