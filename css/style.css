@@ -1,82 +1,110 @@
 html {
   margin: 0;
-  font-family: "EB Garamond", -apple-system, serif;
-  font-size: 24px;
-  line-height: 30px;
-  color: #444;
-  background-color: #f5e9e9;
+  font-family: Inter, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font-size: 17px;
+  line-height: 26px;
+  color: #424140;
+  background-color: white;
   min-height: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 body {
-  margin: 60px 120px;
-  min-height: calc(100% - 120px);
+  margin: 52px auto;
+  min-height: calc(100% - 104px);
   display: flex;
   align-items: center;
-  max-width: 640px; }
+  max-width: 680px;
+}
 
 p, ul {
-  margin: 0 0 45px;
-  padding: 0; }
-
-ul {
-  list-style-type: circle; }
-  ul li {
-    margin-bottom: 19.5px;
-    margin-left: -15px;
-    padding-left: 15px; }
-  ul ::marker {
-    font-size: 15.6px; }
+  margin: 0 0 39px;
+  padding: 0;
+}
 
 h1 {
-  font-weight: 900;
-  font-family: "EB Garamond", -apple-system, serif;
-  font-size: 60px;
-  line-height: 60px; }
+  font-weight: 800;
+  font-family: Inter, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font-size: 59.5px;
+  line-height: 65px;
+  color: #2c2c2b;
+  margin-bottom: 16.9px;
+}
 
 h3 {
-  font-family: Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 19.5px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase; }
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 16.9px;
+}
 
 a {
-  font-weight: 500;
-  color: #444; }
-  a:hover {
-    color: #000;
-    text-decoration-color: #000; }
+  color: #0142a5;
+  border-bottom: 2px solid #b5cef0;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  text-decoration-color: #000;
+}
 
 #main_container #silhouette {
-  width: 30px;
-  height: 30px;
-  fill: #444;
-  margin-bottom: 22.5px;
-  display: none; }
+  width: 52px;
+  height: 52px;
+  fill: #b3afa8;
+}
 #main_container img#earth {
   height: 1em;
   vertical-align: center;
-  margin-left: .2em;
+  margin-left: 0.2em;
   position: relative;
-  top: 3px; }
+  top: 3px;
+}
+#main_container p#links {
+  margin-bottom: 33.8px;
+}
+#main_container #projects {
+  display: flex;
+  margin: 0 -15px;
+}
+#main_container #projects ul {
+  margin-left: 15px;
+  margin-right: 15px;
+  list-style-type: none;
+  width: 50%;
+}
+#main_container #projects ul li {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16.9px;
+  /*
+  margin-left: -$base-lh/3;
+  padding-left: $base-lh/2.5;
+  */
+}
+#main_container #projects ul ::marker {
+  font-size: 17px;
+}
 
 @media screen and (max-width: 820px) {
   body {
-    margin: 90px 90px;
-    min-height: calc(100% - 180px);
-    max-width: none; } }
-@media screen and (max-width: 640px) {
+    margin: 65px 65px;
+    min-height: calc(100% - 156px);
+    max-width: none;
+  }
+}
+@media screen and (max-width: 680px) {
   body {
-    margin: 22.5px 22.5px;
-    min-height: calc(100% - 45px);
-    max-width: none; }
+    margin: 26px 26px;
+    min-height: calc(100% - 39px);
+    max-width: none;
+  }
 
-  ul {
-    list-style-type: none; }
-    ul li {
-      margin-bottom: 22.5px; } }
-
-/*# sourceMappingURL=style.css.map */
+  #main_container #projects {
+    display: block;
+  }
+  #main_container #projects ul {
+    width: auto;
+    margin-bottom: 16.9px;
+  }
+}
