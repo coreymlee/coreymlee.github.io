@@ -28,12 +28,12 @@ h1 {
   font-size: 59.5px;
   line-height: 65px;
   color: #2c2c2b;
-  margin-bottom: 16.9px;
+  margin: 33.8px 0 16.9px;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   margin-bottom: 16.9px;
 }
@@ -100,6 +100,15 @@ a:hover {
     max-width: none;
   }
 
+  h1 {
+    font-size: 42.5px;
+    line-height: 52px;
+  }
+
+  #main_container #silhouette {
+    width: 39px;
+    height: 39px;
+  }
   #main_container #projects {
     display: block;
   }

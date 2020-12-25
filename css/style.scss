@@ -39,13 +39,12 @@ h1 {
   font-size: $base-type-size*3.5;
   line-height: $base-lh*2.5;
   color: #2c2c2b;
-  margin-bottom: $base-lh*.65;
-
+  margin: $base-lh*.65*2 0 $base-lh*.65;
 }
 
 h3 {
   font-weight:600;
-  font-size: 22px;
+  font-size: 20px;
   line-height: $base-lh;
   margin-bottom: $base-lh*.65;
 }
@@ -66,8 +65,7 @@ a {
   #silhouette {
     width: $photo-width;
     height: $photo-width;
-    fill: #b3afa8;
-    
+    fill: #b3afa8;    
   }
 
   img#earth {
@@ -125,7 +123,16 @@ a {
     max-width: none;
   }
 
+  h1 {
+    font-size: $base-type-size*2.5;
+    line-height: $base-lh*2;
+  }
+
   #main_container {
+    #silhouette {
+      width: $photo-width*.75;
+      height: $photo-width*.75; 
+    }  
   
     #projects {
       display: block;
