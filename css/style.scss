@@ -1,7 +1,7 @@
 $bg-color: white;
 $text-color: #424140;
 $link-color: #0142a5;
-$highlight-color: #e02a12;
+$highlight-color: #b61e0a;
 
 $base-type-size: 17px;
 $base-lh: 26px;
@@ -55,8 +55,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #000;
-    text-decoration-color: #000;
+    color: $highlight-color;
+    border-color: pink;
     }
 }
 
