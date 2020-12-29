@@ -135,10 +135,6 @@ section {
 }
 
 @media screen and (max-width: 900px) {  
-  html {
-    display: initial;
-  }
-
   h1 {
     max-width: auto;
   }
@@ -165,6 +161,9 @@ section {
 }
 
 @media screen and (max-width: 700px) {
+  html {
+    display: initial;
+  }
   section {
     &#current {
         margin: $base-p-spacing*6 0;
