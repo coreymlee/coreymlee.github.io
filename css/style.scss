@@ -160,7 +160,7 @@ section {
 
 @media screen and (max-width: 768px) {  
   #main_container {
-    padding: $base-lh;
+    padding: 0 $base-lh $base-lh;
   }
 }
 
@@ -178,8 +178,8 @@ section {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: $base-type-size*2;
-    line-height: $base-lh*1.75;
+    font-size: $base-type-size*1.75;
+    line-height: $base-lh*1.5;
   }
 
   img#earth {
@@ -191,16 +191,15 @@ section {
   p, ul {
     max-width: auto;
   }
-   
+
   section {
     &#current {  
+      margin-top: $base-lh*2;
+
       p {
         font-size: $base-type-size;
         line-height: $base-lh;
       }
-    }
-    &#previous ul {
-      column-count: 1;
     }
   }
 }

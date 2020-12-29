@@ -132,7 +132,7 @@ section#previous ul {
 }
 @media screen and (max-width: 768px) {
   #main_container {
-    padding: 26px;
+    padding: 0 26px 26px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -145,8 +145,8 @@ section#previous ul {
 }
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 38px;
-    line-height: 45.5px;
+    font-size: 33.25px;
+    line-height: 39px;
   }
 
   img#earth {
@@ -159,11 +159,11 @@ section#previous ul {
     max-width: auto;
   }
 
+  section#current {
+    margin-top: 52px;
+  }
   section#current p {
     font-size: 19px;
     line-height: 26px;
-  }
-  section#previous ul {
-    column-count: 1;
   }
 }
