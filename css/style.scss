@@ -1,14 +1,14 @@
-$bg-color: #ebeef3;
-$text-color: #585a61;
-$link-color: #24252b;
-$highlight-color: #f7e700;
+$bg-color: #fff;
+$text-color: #1E2B6A;
+$link-color: #1E2B6A;
+$highlight-color: #c1c8eb;
 
-$base-type-size: 28px;
-$base-lh: 36px;
-$base-p-spacing: $base-lh*.667;
+$base-type-size: 22px;
+$base-lh: 28px;
+$base-p-spacing: 20px;
 
 $sans-serif: Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-$serif: "EB Garamond", -apple-system, serif;
+$serif: Crimson Pro, "EB Garamond", -apple-system, serif;
 $photo-width: $base-lh*2;
 
 html {
@@ -16,12 +16,12 @@ html {
   margin: 0;
   font-family: $serif;
   font-size: $base-type-size;
+  font-weight: 300;
+  letter-spacing: 0.004em;
   line-height: $base-lh;
-  letter-spacing: 0.02em;
   color: $text-color;
   background-color: $bg-color;
   min-height:100%;
-  height:100%;
 }
 
 body {
@@ -38,23 +38,18 @@ p, ul {
 a {
   text-decoration: none;
   color: $link-color;
-  border-bottom: 2px solid white;
+  border-bottom: 1.5px solid $highlight-color;
   &:hover {    
+    border-bottom: 1.5px solid #9da7d1;
     }
 }
 
 #main_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: $base-lh;
-  text-align: center;
-  max-width: 480px;
-
+  max-width: 520px;
 }
 
 img {
-  width: 24px;
+  width: 120px;
   margin-bottom: $base-lh;
-  display: none;
 }
