@@ -4,8 +4,8 @@ $link-color: #1E2B6A;
 $highlight-color: #c1c8eb;
 
 $base-type-size: 22px;
-$base-lh: 28px;
-$base-p-spacing: 20px;
+$base-lh: 32px;
+$base-p-spacing: 16px;
 
 $sans-serif: Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 $serif: Crimson Pro, "EB Garamond", -apple-system, serif;
@@ -46,10 +46,10 @@ a {
 
 #main_container {
   padding: $base-lh*2 $base-lh;
-  max-width: 520px;
+  max-width: 600px;
 }
 
 img {
-  width: 120px;
+  width:120px;
   margin-bottom: $base-p-spacing;
 }

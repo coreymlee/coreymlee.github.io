@@ -5,7 +5,7 @@ html {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.004em;
-  line-height: 28px;
+  line-height: 32px;
   color: #1E2B6A;
   background-color: #fff;
   min-height: 100%;
@@ -18,7 +18,7 @@ body {
 }
 
 p, ul {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   padding: 0;
 }
 
@@ -32,11 +32,11 @@ a:hover {
 }
 
 #main_container {
-  padding: 56px 28px;
-  max-width: 520px;
+  padding: 64px 32px;
+  max-width: 600px;
 }
 
 img {
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
