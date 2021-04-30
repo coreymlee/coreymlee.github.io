@@ -30,7 +30,7 @@ body {
   align-items: center;
 }
 
-p, ul {
+p {
   margin: 0 0 $base-p-spacing;
   padding:0;
 }
@@ -52,4 +52,19 @@ a {
 img {
   width:120px;
   margin-bottom: $base-p-spacing;
+}
+
+
+@media screen and (max-width: 600px) {
+  $base-lh: 28px;
+  $base-p-spacing: 20px;
+
+  html {
+    font-size: $base-type-size;
+    line-height: $base-lh;
+  }
+
+  p {
+    margin: 0 0 $base-p-spacing;
+  }
 }

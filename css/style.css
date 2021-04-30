@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-p, ul {
+p {
   margin: 0 0 16px;
   padding: 0;
 }
@@ -39,4 +39,15 @@ a:hover {
 img {
   width: 120px;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
 }
