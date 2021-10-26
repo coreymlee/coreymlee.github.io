@@ -3,9 +3,9 @@ $text-color: rgb(3, 39, 63);
 $link-color: rgb(216, 61, 0);
 $highlight-color: #f0d690;
 
-$base-type-size: 23px;
-$base-lh: 36px;
-$base-p-spacing: 16px;
+$base-type-size: 22.5px;
+$base-lh: 32px;
+$base-p-spacing: 24px;
 
 $serif: Crimson Pro, "EB Garamond", -apple-system, serif;
 $sans-serif: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
@@ -68,7 +68,7 @@ img#two {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: $base-lh*0.5;
+    padding: $base-lh $base-lh*0.5;
     font-size: $base-type-size;
     line-height: $base-lh;
   } 
