@@ -68,7 +68,7 @@ img#two {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: $base-lh;
+    padding: $base-lh*0.5;
     font-size: $base-type-size;
     line-height: $base-lh;
   } 
