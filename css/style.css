@@ -1,22 +1,25 @@
 html {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #f5f8f2;
   min-height: 100%;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  padding: 64px 32px;
-  font-family: Crimson Pro, "EB Garamond", -apple-system, serif;
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 0.004em;
-  line-height: 32px;
-  color: #1E2B6A;
+  padding: 72px;
+  font-family: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #03273f;
+  letter-spacing: 0.008em;
 }
 
 p {
@@ -24,13 +27,25 @@ p {
   padding: 0;
 }
 
+ul {
+  margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 36px;
+  margin-bottom: 72px;
+}
+
 a {
   text-decoration: none;
-  color: #1E2B6A;
-  border-bottom: 1.5px solid #c1c8eb;
+  color: #d83d00;
+  border-bottom: 2px solid #f0d690;
 }
+
 a:hover {
-  border-bottom: 1.5px solid #9da7d1;
+  border-bottom: 2px solid #f8b600;
 }
 
 #main_container {
@@ -38,18 +53,24 @@ a:hover {
 }
 
 img {
-  width: 120px;
   margin-bottom: 16px;
+}
+
+img#two {
+  -webkit-filter: contrast(140%) brightness(75%) sepia(50%) hue-rotate(35deg) saturate(90%);
+          filter: contrast(140%) brightness(75%) sepia(50%) hue-rotate(35deg) saturate(90%);
+  border-radius: 100%;
+  width: 144px;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 56px 28px;
+    padding: 56px 20px;
     font-size: 21px;
     line-height: 28px;
   }
-
   p {
     margin: 0 0 20px;
   }
 }
+/*# sourceMappingURL=style.css.map */
