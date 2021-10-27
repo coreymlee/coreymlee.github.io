@@ -1,7 +1,7 @@
 $bg-color:rgb(245, 248, 242);
 $text-color: rgb(3, 39, 63);
-$link-color: rgb(216, 61, 0);
-$highlight-color: #f0d690;
+$link-color: rgb(187, 59, 0);
+$highlight-color: #e9e0b6;
 
 $base-type-size: 22.5px;
 $base-lh: 32px;
@@ -25,7 +25,7 @@ body {
   padding: $base-lh*2;
   font-family: $sans-serif;
   font-size: $base-type-size;
-  font-weight: 400;
+  font-weight: 500;
   line-height: $base-lh;
   color: $text-color;
   letter-spacing: 0.008em;
@@ -37,20 +37,22 @@ p {
 }
 ul {
   margin:0;
+  li { margin-bottom: 4px}
 }
 h1 {
   font-size: 35px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: $base-lh;
   margin: 0 auto 2*$base-lh;
 }
 a {
   text-decoration: none;
-  color: $text-color;
+  color: $link-color;
   font-weight: 500;
   border-bottom: 2px solid $highlight-color;
-  &:hover {    
-    border-bottom: 2px solid #f8b600;
+  transition: 0.3s;
+  &:hover {
+    color: maroon;
     }
 }
 
@@ -62,7 +64,7 @@ img {
   margin-bottom: $base-p-spacing;
 }
 img#two {
-  filter: contrast(120%) brightness(75%) sepia(70%) hue-rotate(35deg) saturate(90%);
+  filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
   border-radius: 100%;
   width: $base-lh*5;
 }
