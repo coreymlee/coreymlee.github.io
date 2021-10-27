@@ -44,7 +44,7 @@ h1 {
   font-weight: 800;
   line-height: $base-lh;
   margin: 0 auto $base-p-spacing;
-  padding-bottom: 2*$base-lh;
+  padding-bottom: $base-lh;
 }
 a {
   text-decoration: none;
@@ -67,13 +67,12 @@ img {
 img#two {
   filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
   border-radius: 100%;
-  width: $base-lh*4;
+  width: $base-lh*5;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    padding: $base-lh 24px;
-    font-size: $base-type-size;
-    line-height: $base-lh;
+    padding: $base-lh 20px;
+    font-size: 22px;
   } 
 }

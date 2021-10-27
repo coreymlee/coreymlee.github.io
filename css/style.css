@@ -40,7 +40,7 @@ h1 {
   font-weight: 800;
   line-height: 32px;
   margin: 0 auto 24px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
 }
 
 a {
@@ -68,14 +68,13 @@ img#two {
   -webkit-filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
           filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
   border-radius: 100%;
-  width: 128px;
+  width: 160px;
 }
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 32px 24px;
-    font-size: 22.5px;
-    line-height: 32px;
+    padding: 32px 20px;
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=style.css.map */
