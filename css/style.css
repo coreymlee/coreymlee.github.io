@@ -65,10 +65,11 @@ img {
 }
 
 img#two {
-  -webkit-filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
-          filter: contrast(170%) brightness(60%) sepia(100%) hue-rotate(330deg) saturate(100%);
+  -webkit-filter: contrast(120%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(120%);
+          filter: contrast(120%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(120%);
   border-radius: 100%;
   width: 160px;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 600px) {
