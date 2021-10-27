@@ -43,7 +43,7 @@ h1 {
   font-size: 35px;
   font-weight: 800;
   line-height: $base-lh;
-  margin: 0 auto $base-p-spacing;
+  margin: 0 auto $base-p-spacing*2;
 }
 a {
   text-decoration: none;
@@ -73,6 +73,5 @@ img#two {
 @media screen and (max-width: 600px) {
   body {
     padding: $base-lh 20px;
-    font-size: 22px;
   } 
 }
