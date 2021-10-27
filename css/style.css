@@ -4,7 +4,7 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: #f5f8f2;
+  background-color: #f8f7f2;
   min-height: 100%;
 }
 
@@ -40,7 +40,6 @@ h1 {
   font-weight: 800;
   line-height: 32px;
   margin: 0 auto 24px;
-  padding-bottom: 32px;
 }
 
 a {
@@ -65,10 +64,10 @@ img {
 }
 
 img#two {
-  -webkit-filter: contrast(120%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(120%);
-          filter: contrast(120%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(120%);
+  -webkit-filter: contrast(160%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(90%);
+          filter: contrast(160%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(90%);
   border-radius: 100%;
-  width: 160px;
+  width: 192px;
   vertical-align: middle;
 }
 
