@@ -15,7 +15,7 @@ body {
   display: flex;
   padding: 64px;
   font-family: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-  font-size: 22.5px;
+  font-size: 21px;
   font-weight: 500;
   line-height: 32px;
   color: #03273f;
@@ -29,10 +29,6 @@ p {
 
 ul {
   margin: 0;
-}
-
-ul li {
-  margin-bottom: 4px;
 }
 
 h1 {
@@ -64,8 +60,8 @@ img {
 }
 
 img#two {
-  -webkit-filter: contrast(160%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(90%);
-          filter: contrast(160%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(90%);
+  -webkit-filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
+          filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
   border-radius: 100%;
   width: 192px;
   vertical-align: middle;

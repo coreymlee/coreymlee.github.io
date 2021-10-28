@@ -3,7 +3,7 @@ $text-color: rgb(3, 39, 63);
 $link-color: rgb(187, 59, 0);
 $highlight-color: #e9e0b6;
 
-$base-type-size: 22.5px;
+$base-type-size: 21px;
 $base-lh: 32px;
 $base-p-spacing: 24px;
 
@@ -37,7 +37,6 @@ p {
 }
 ul {
   margin:0;
-  li { margin-bottom: 4px}
 }
 h1 {
   font-size: 35px;
@@ -64,7 +63,7 @@ img {
   margin-bottom: $base-p-spacing;
 }
 img#two {
-  filter: contrast(160%) brightness(65%) sepia(80%) hue-rotate(310deg) saturate(90%);
+  filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
   border-radius: 100%;
   width: $base-lh*6;
   vertical-align: middle;
