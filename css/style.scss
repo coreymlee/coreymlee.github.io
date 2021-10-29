@@ -1,15 +1,13 @@
-$bg-color:rgb(248, 247, 242);
-$text-color: rgb(3, 39, 63);
-$link-color: rgb(187, 59, 0);
-$highlight-color: #e9e0b6;
+$bg-color:white;
+$text-color: rgb(15, 78, 150);
+$link-color: rgb(15, 78, 150);
+$highlight-color: rgb(15, 78, 150);
 
-$base-type-size: 21px;
+$base-type-size: 23px;
 $base-lh: 32px;
 $base-p-spacing: 24px;
 
-$serif: Crimson Pro, "EB Garamond", -apple-system, serif;
 $sans-serif: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-$photo-width: $base-lh*2;
 
 html {
   display: flex;
@@ -21,6 +19,7 @@ html {
 
 body {
   margin:0;
+  width:100%;
   display:flex;
   padding: $base-lh*2;
   font-family: $sans-serif;
@@ -28,42 +27,44 @@ body {
   font-weight: 500;
   line-height: $base-lh;
   color: $text-color;
-  letter-spacing: 0.008em;
+  letter-spacing: 0.001em;
 }
-
+#main_container {
+  max-width: 600px;
+}
 p {
   margin: 0 0 $base-p-spacing;
   padding:0;
+
+  &#header {
+    margin-bottom: $base-p-spacing*2;
+  }
 }
 ul {
   margin:0;
 }
 h1 {
+  display:none;
   font-size: 35px;
   font-weight: 800;
   line-height: $base-lh;
   margin: 0 auto $base-p-spacing*2;
 }
+b {
+  font-weight: 700;
+}
 a {
   text-decoration: none;
   color: $link-color;
-  font-weight: 500;
-  border-bottom: 2px solid $highlight-color;
+  border-bottom: 1.8px solid $highlight-color;
   transition: 0.3s;
   &:hover {
-    color: maroon;
     }
-}
-
-#main_container {
-  max-width: 600px;
 }
 
 img {
   margin-bottom: $base-p-spacing;
-}
-img#two {
-  filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
+  filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
   border-radius: 100%;
   width: $base-lh*6;
   vertical-align: middle;
@@ -71,6 +72,6 @@ img#two {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: $base-lh 20px;
+    padding: 20px;
   } 
 }

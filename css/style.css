@@ -4,22 +4,27 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: #f8f7f2;
+  background-color: white;
   min-height: 100%;
 }
 
 body {
   margin: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 64px;
   font-family: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 500;
   line-height: 32px;
-  color: #03273f;
-  letter-spacing: 0.008em;
+  color: #0f4e96;
+  letter-spacing: 0.001em;
+}
+
+#main_container {
+  max-width: 600px;
 }
 
 p {
@@ -27,41 +32,38 @@ p {
   padding: 0;
 }
 
+p#header {
+  margin-bottom: 48px;
+}
+
 ul {
   margin: 0;
 }
 
 h1 {
+  display: none;
   font-size: 35px;
   font-weight: 800;
   line-height: 32px;
   margin: 0 auto 48px;
 }
 
+b {
+  font-weight: 700;
+}
+
 a {
   text-decoration: none;
-  color: #bb3b00;
-  font-weight: 500;
-  border-bottom: 2px solid #e9e0b6;
+  color: #0f4e96;
+  border-bottom: 1.8px solid #0f4e96;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-a:hover {
-  color: maroon;
-}
-
-#main_container {
-  max-width: 600px;
-}
-
 img {
   margin-bottom: 24px;
-}
-
-img#two {
-  -webkit-filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
-          filter: grayscale(100%) contrast(140%) brightness(75%) sepia(15%) hue-rotate(150deg) saturate(105%);
+  -webkit-filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
+          filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
   border-radius: 100%;
   width: 192px;
   vertical-align: middle;
@@ -69,7 +71,7 @@ img#two {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 32px 20px;
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
