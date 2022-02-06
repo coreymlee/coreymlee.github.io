@@ -106,3 +106,12 @@ img {
   }
   #coffee {display:none;}
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    align-items: center;
+    padding: $base-lh $base-lh/2;
+  }
+  #main_container {
+    gap: $base-lh;  } 
+  }
