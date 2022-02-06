@@ -4,7 +4,7 @@ html {
   display: flex;
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #FCFCFA;
   min-height: 100%;
 }
 
@@ -15,16 +15,35 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 64px;
-  font-family: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
-  font-size: 23px;
-  font-weight: 500;
+  font-family: Crimson Pro, EB Garamond, Georgia, serif;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 32px;
-  color: #0f4e96;
-  letter-spacing: 0.001em;
+  color: #383827;
+  letter-spacing: 0.01em;
 }
 
 #main_container {
-  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  width: 100%;
+}
+
+.content {
+  width: 50%;
+}
+
+.content#left {
+  background: url("../images/corey.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 85%;
+}
+
+.content#right {
+  max-width: 720px;
 }
 
 p {
@@ -40,12 +59,14 @@ ul {
   margin: 0;
 }
 
-h1 {
-  display: none;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 32px;
-  margin: 0 auto 48px;
+#coffee {
+  font-family: Helvetica Neue, Helvetica, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 64px;
+  text-transform: lowercase;
+  margin: 0 auto 144px;
+  text-align: left;
 }
 
 b {
@@ -53,9 +74,7 @@ b {
 }
 
 a {
-  text-decoration: none;
-  color: #0f4e96;
-  border-bottom: 1.8px solid #0f4e96;
+  color: #383827;
 }
 
 a:hover {
@@ -63,17 +82,40 @@ a:hover {
 }
 
 img {
-  margin-bottom: 24px;
+  margin-top: 160px;
   -webkit-filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
           filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
   border-radius: 100%;
-  width: 192px;
+  width: 208px;
   vertical-align: middle;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   body {
-    padding: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 64px 32px;
+  }
+  #main_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  #left {
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+  }
+  #coffee {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

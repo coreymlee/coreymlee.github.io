@@ -1,13 +1,14 @@
-$bg-color:white;
-$text-color: rgb(15, 78, 150);
-$link-color: rgb(15, 78, 150);
-$highlight-color: rgb(15, 78, 150);
+$bg-color:#FCFCFA;
+$text-color: #383827;
+$link-color: $text-color;
+$highlight-color: $text-color;
 
-$base-type-size: 23px;
+$base-type-size: 24px;
 $base-lh: 32px;
 $base-p-spacing: 24px;
 
-$sans-serif: SF Pro, Helvetica Neue, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+$serif: Crimson Pro, EB Garamond, Georgia, serif;
+$sans-serif: Helvetica Neue, Helvetica, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
   display: flex;
@@ -22,15 +23,30 @@ body {
   width:100%;
   display:flex;
   padding: $base-lh*2;
-  font-family: $sans-serif;
+  font-family: $serif;
+  font-weight:400;
   font-size: $base-type-size;
-  font-weight: 500;
   line-height: $base-lh;
   color: $text-color;
-  letter-spacing: 0.001em;
+  letter-spacing: 0.01em;
 }
 #main_container {
-  max-width: 600px;
+  display: flex;
+  gap: $base-lh*2;
+  width: 100%;
+}
+.content {
+  width: 50%;
+
+  &#left {
+    background: url("../images/corey.png");
+    background-size: cover;
+    background-position: center;
+    opacity:85%;
+  }
+  &#right {
+    max-width: 720px;
+  }
 }
 p {
   margin: 0 0 $base-p-spacing;
@@ -43,35 +59,50 @@ p {
 ul {
   margin:0;
 }
-h1 {
-  display:none;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: $base-lh;
-  margin: 0 auto $base-p-spacing*2;
+#coffee {
+  font-family: $sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: $base-lh*2;
+  text-transform: lowercase;
+  margin: 0 auto $base-p-spacing*6;
+  text-align: left;
 }
 b {
   font-weight: 700;
 }
 a {
-  text-decoration: none;
   color: $link-color;
-  border-bottom: 1.8px solid $highlight-color;
+  
   &:hover {
     background: rgb(230, 238, 248);
     }
 }
 
 img {
-  margin-bottom: $base-p-spacing;
+  margin-top: $base-lh*2 + $base-p-spacing*4;
   filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
   border-radius: 100%;
-  width: $base-lh*6;
+  width: $base-lh*6.5;
   vertical-align: middle;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   body {
-    padding: 20px;
+    align-items: center;
+    padding: $base-lh*2 $base-lh;
+  }
+  #main_container {
+    flex-direction: column;
+    align-items: center;
   } 
+  .content {
+    width: 100%;
+  }
+  #left {
+    height: 240px;
+    width: 240px;
+    border-radius: 100%;
+  }
+  #coffee {display:none;}
 }
