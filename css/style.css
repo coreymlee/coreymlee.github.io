@@ -78,7 +78,8 @@ a {
 }
 
 a:hover {
-  background: #e6eef8;
+  -webkit-text-decoration-color: #ca5e05;
+          text-decoration-color: #ca5e05;
 }
 
 img {
@@ -124,10 +125,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 32px 16px;
-  }
-  #main_container {
-    gap: 32px;
+    padding: 64px 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */
