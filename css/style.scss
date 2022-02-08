@@ -116,16 +116,18 @@ img {
   #main_container {
     gap: $base-lh;
   } 
+  p {
+    margin: 0 0 $base-p-spacing;
+  }  
  
 }
 
 @media screen and (max-width: 960px) {
   $base-type-size: 25px;
-  $base-lh: 32px;
-  $base-p-spacing: 24px;
 
   body {
     margin: $base-lh*2 $base-lh;
+    font-size: $base-type-size;
   }
   #main_container {
     flex-direction: column;
