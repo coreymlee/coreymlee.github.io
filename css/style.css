@@ -90,13 +90,13 @@ b {
 
 a {
   color: #383827;
-  -webkit-text-decoration-color: #e6bf6a;
-          text-decoration-color: #e6bf6a;
+  -webkit-text-decoration-color: #e6b06a;
+          text-decoration-color: #e6b06a;
   text-decoration-thickness: 3px;
 }
 
 a:hover {
-  background-color: #f7eedd;
+  background-color: #e2f7dd;
 }
 
 img {
@@ -116,6 +116,7 @@ img {
   }
   #main_container {
     gap: 32px;
+    max-height: none;
   }
   p {
     margin: 0 0 24px;
@@ -154,7 +155,8 @@ img {
 
 @media screen and (max-width: 500px) {
   body {
-    margin: 64px 24px;
+    margin: 72px 24px;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=style.css.map */

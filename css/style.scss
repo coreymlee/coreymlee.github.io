@@ -1,7 +1,7 @@
 $bg-color:#FCFCFA;
 $text-color: #383827;
 $link-color: $text-color;
-$highlight-color: #e6bf6a;
+$highlight-color: #e6b06a;
 ;
 
 $base-type-size: 28px;
@@ -90,7 +90,7 @@ a {
   text-decoration-thickness: 3px;
 
   &:hover {    
-    background-color: #f7eedd;
+    background-color: #e2f7dd;
   }
 }
 
@@ -115,6 +115,7 @@ img {
   }
   #main_container {
     gap: $base-lh;
+    max-height: none;
   } 
   p {
     margin: 0 0 $base-p-spacing;
@@ -152,11 +153,11 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-  $base-type-size: 25px;
-  $base-lh: 32px;
-  $base-p-spacing: 24px;
+  $base-type-size: 24px;
 
   body {
     margin: $base-lh*2 24px;
+    font-size: $base-type-size;
+
   }
 }
