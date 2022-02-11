@@ -4,20 +4,18 @@ $link-color: $text-color;
 $highlight-color: #e6b06a;
 ;
 
-$base-type-size: 28px;
-$base-lh: 36px;
-$base-p-spacing: 28px;
+$base-type-size: 24.5px;
+$base-lh: 32px;
+$base-p-spacing: 24px;
 
 $serif: Crimson Pro, EB Garamond, Georgia, serif;
 $sans-serif: Helvetica Neue, Helvetica, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
   display: flex;
-  margin: 0;
   padding:0;
   background-color: $bg-color;
   min-height:100%;
-  height:100%;
 }
 
 body {
@@ -33,23 +31,18 @@ body {
 }
 #main_container {
   margin: auto;
-  height:100%;
-  max-height: 1000px;
-  max-width: 1800px;
+  width: 100%;
+  max-width: 1080px;
   display: flex;
   gap: $base-lh*2;
-  width: 100%;
+  
   align-items: center;
 }
 .content {
   width: 50%;
 
   &#left {
-    background: url("../images/corey.png");
-    background-size: cover;
-    background-position: center;
     opacity:85%;
-    height: 100%;
   }
   &#right {
     padding: 0;
@@ -95,27 +88,18 @@ a {
 }
 
 img {
-  margin-top: $base-lh*2 + $base-p-spacing*4;
-  filter: contrast(105%) sepia(100%) saturate(1000%) brightness(100%) saturate(40%) hue-rotate(172deg);
-  border-radius: 100%;
-  width: $base-lh*6.5;
+  width: 100%;
   vertical-align: middle;
 }
 
 
-@media screen and (max-width: 1200px) {
-  $base-type-size: 25px;
-  $base-lh: 32px;
-  $base-p-spacing: 24px;
-  
+@media screen and (max-width: 1200px) {  
   body {
-    margin: $base-lh;
-    font-size: $base-type-size;
-    line-height: $base-lh;
-  }
+    margin: $base-lh*1.5;
+  }  
   #main_container {
-    gap: $base-lh;
     max-height: none;
+    gap: $base-lh*1.5;
   } 
   p {
     margin: 0 0 $base-p-spacing;
@@ -123,12 +107,9 @@ img {
  
 }
 
-@media screen and (max-width: 960px) {
-  $base-type-size: 25px;
-
+@media screen and (max-width: 1080px) {
   body {
     margin: $base-lh*2 $base-lh;
-    font-size: $base-type-size;
   }
   #main_container {
     flex-direction: column;
@@ -140,9 +121,18 @@ img {
     width: 100%;
 
     &#left {
+      background: url("../images/corey.png");
+      background-size: cover;
+      background-position: center;
+      opacity:85%;
+      border-radius: 100%;
       height: 240px;
       width: 240px;
-      border-radius: 100%;
+
+      img {
+        display: none;
+      }
+  
     }
     &#right {
       padding:0;
