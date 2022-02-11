@@ -96,19 +96,6 @@ img {
   vertical-align: middle;
 }
 
-@media screen and (max-width: 1200px) {
-  body {
-    margin: 48px;
-  }
-  #main_container {
-    max-height: none;
-    gap: 48px;
-  }
-  p {
-    margin: 0 0 24px;
-  }
-}
-
 @media screen and (max-width: 1080px) {
   body {
     margin: 64px 32px;

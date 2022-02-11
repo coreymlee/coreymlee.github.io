@@ -92,21 +92,6 @@ img {
   vertical-align: middle;
 }
 
-
-@media screen and (max-width: 1200px) {  
-  body {
-    margin: $base-lh*1.5;
-  }  
-  #main_container {
-    max-height: none;
-    gap: $base-lh*1.5;
-  } 
-  p {
-    margin: 0 0 $base-p-spacing;
-  }  
- 
-}
-
 @media screen and (max-width: 1080px) {
   body {
     margin: $base-lh*2 $base-lh;
