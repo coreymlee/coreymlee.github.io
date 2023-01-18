@@ -1,14 +1,13 @@
-$bg-color:#FCFCFA;
+$bg-color:#fafcfa;
 $text-color: #383827;
 $link-color: $text-color;
 $highlight-color: #e6b06a;
-;
 
-$base-type-size: 24.5px;
+$base-type-size: 23.5px;
 $base-lh: 32px;
 $base-p-spacing: 24px;
 
-$serif: Crimson Pro, EB Garamond, Georgia, serif;
+$serif:  Crimson Pro, EB Garamond, Georgia, serif;
 $sans-serif: Helvetica Neue, Helvetica, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
@@ -53,27 +52,42 @@ body {
 
   }
 }
-p {
+p, div#header {
   margin: 0 0 $base-p-spacing;
   padding:0;
+}
 
-  &#header {
-    margin-bottom: $base-p-spacing*2;
+div#header {
+  margin-bottom: $base-p-spacing*4;
+  font-weight: 600;
+  
+
+  #status {
+    font-weight: normal;
+    font-size: $base-type-size*.75;
+
+    #blip {
+      color: goldenrod;
+    }
   }
 }
+
 ul {
   margin:0;
 }
-#coffee {
+
+#contact {
   display: none;
-  font-family: $sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: $base-lh*2;
-  text-transform: lowercase;
-  margin: 0 auto $base-p-spacing*6;
-  text-align: left;
+  a {
+    padding: 0.25*$base-lh 0.5*$base-lh;
+    margin-right: 0.5*$base-lh;
+    border: 1.5px solid black;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+  }
 }
+
 b {
   font-weight: 700;
 }
