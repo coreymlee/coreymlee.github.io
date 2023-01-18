@@ -20,14 +20,14 @@ body {
 #main_container {
   margin: auto;
   width: 100%;
-  max-width: 1080px;
+  max-width: 540px;
   display: flex;
   gap: 64px;
   align-items: center;
 }
 
 .content {
-  width: 50%;
+  width: 100%;
 }
 .content#left {
   opacity: 85%;
