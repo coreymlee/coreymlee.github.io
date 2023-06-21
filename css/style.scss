@@ -1,14 +1,13 @@
-$bg-color:#fafcfa;
-$text-color: #383827;
-$link-color: $text-color;
-$highlight-color: #e6b06a;
-
-$base-type-size: 23.5px;
-$base-lh: 32px;
-$base-p-spacing: 24px;
+$bg-color:#0c190c;
+$text-color: #9da199;
+$link-color: #d3d5cf;
+$highlight-color: rgb(184, 196, 189);
+$base-type-size: 21px;
+$base-lh: 28px;
+$base-p-spacing: 22px;
 
 $serif:  Crimson Pro, EB Garamond, Georgia, serif;
-$sans-serif: Helvetica Neue, Helvetica, SF Pro, -apple-system, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+$sans-serif: -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
   display: flex;
@@ -23,7 +22,7 @@ body {
   display:flex;
   align-items: center;
   font-family: $serif;
-  font-weight:400;
+  font-weight:300;
   font-size: $base-type-size;
   line-height: $base-lh;
   color: $text-color;
@@ -48,26 +47,35 @@ body {
     p {
       max-width: 680px;
     }
-
   }
 }
-p, div#header {
+p {
   margin: 0 0 $base-p-spacing;
   padding:0;
 }
 
-div#header {
-  margin-bottom: $base-p-spacing*4;
-  font-weight: 600;
-  
+#header {
+  margin-bottom: 3*$base-lh;
 
   #status {
-    font-weight: normal;
-    font-size: $base-type-size*.75;
+    font-style: italic;
+    animation: pulse 4s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    20% {
 
-    #blip {
-      color: goldenrod;
+      color: $text-color;
     }
+    100% {
+      color: #7d944e;
+    }
+  }
+
+  #indicator {
+    color: #7d944e;
+    font-size: 1*$base-type-size;
+    margin-right: .1*$base-type-size;
   }
 }
 
@@ -92,12 +100,16 @@ b {
 }
 a {
   color: $link-color;
+  font-weight: 500;
+  text-decoration: none;
+/*
   text-decoration-color: $highlight-color;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 0px;
 
   &:hover {    
     background-color: #f7eedd;
   }
+  */
 }
 
 img {

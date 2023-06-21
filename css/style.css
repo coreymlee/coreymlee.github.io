@@ -1,20 +1,20 @@
 html {
   display: flex;
   padding: 0;
-  background-color: #fafcfa;
+  background-color: #0c190c;
   min-height: 100%;
 }
 
 body {
-  margin: 64px;
+  margin: 56px;
   width: 100%;
   display: flex;
   align-items: center;
   font-family: Crimson Pro, EB Garamond, Georgia, serif;
-  font-weight: 400;
-  font-size: 23.5px;
-  line-height: 32px;
-  color: #383827;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 28px;
+  color: #9da199;
 }
 
 #main_container {
@@ -22,7 +22,7 @@ body {
   width: 100%;
   max-width: 540px;
   display: flex;
-  gap: 64px;
+  gap: 56px;
   align-items: center;
 }
 
@@ -39,21 +39,30 @@ body {
   max-width: 680px;
 }
 
-p, div#header {
-  margin: 0 0 24px;
+p {
+  margin: 0 0 22px;
   padding: 0;
 }
 
-div#header {
-  margin-bottom: 96px;
-  font-weight: 600;
+#header {
+  margin-bottom: 84px;
 }
-div#header #status {
-  font-weight: normal;
-  font-size: 17.625px;
+#header #status {
+  font-style: italic;
+  animation: pulse 4s infinite alternate;
 }
-div#header #status #blip {
-  color: goldenrod;
+@keyframes pulse {
+  20% {
+    color: #9da199;
+  }
+  100% {
+    color: #7d944e;
+  }
+}
+#header #indicator {
+  color: #7d944e;
+  font-size: 21px;
+  margin-right: 2.1px;
 }
 
 ul {
@@ -64,8 +73,8 @@ ul {
   display: none;
 }
 #contact a {
-  padding: 8px 16px;
-  margin-right: 16px;
+  padding: 7px 14px;
+  margin-right: 14px;
   border: 1.5px solid black;
   text-decoration: none;
   font-size: 19px;
@@ -77,13 +86,17 @@ b {
 }
 
 a {
-  color: #383827;
-  -webkit-text-decoration-color: #e6b06a;
-          text-decoration-color: #e6b06a;
-  text-decoration-thickness: 3px;
-}
-a:hover {
-  background-color: #f7eedd;
+  color: #d3d5cf;
+  font-weight: 500;
+  text-decoration: none;
+  /*
+    text-decoration-color: $highlight-color;
+    text-decoration-thickness: 0px;
+
+    &:hover {    
+      background-color: #f7eedd;
+    }
+    */
 }
 
 img {
@@ -93,12 +106,12 @@ img {
 
 @media screen and (max-width: 1080px) {
   body {
-    margin: 64px 32px;
+    margin: 56px 28px;
   }
   #main_container {
     flex-direction: column;
     height: auto;
-    gap: 64px;
+    gap: 56px;
     max-width: 560px;
   }
   .content {
@@ -125,7 +138,7 @@ img {
 }
 @media screen and (max-width: 500px) {
   body {
-    margin: 64px 24px;
+    margin: 56px 24px;
     font-size: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
