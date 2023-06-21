@@ -1,6 +1,6 @@
-$bg-color:#0c190c;
-$text-color: #9da199;
-$link-color: #d3d5cf;
+$bg-color:#041b04;
+$text-color: #b0b5ac;
+$link-color: #e6f0de;
 $highlight-color: rgb(184, 196, 189);
 $base-type-size: 21px;
 $base-lh: 28px;
@@ -153,11 +153,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-  $base-type-size: 24px;
+  $base-type-size: 23px;
 
   body {
-    margin: $base-lh*2 24px;
+    margin: $base-lh*2 $base-lh;
     font-size: $base-type-size;
-
   }
 }

@@ -1,7 +1,7 @@
 html {
   display: flex;
   padding: 0;
-  background-color: #0c190c;
+  background-color: #041b04;
   min-height: 100%;
 }
 
@@ -14,7 +14,7 @@ body {
   font-weight: 300;
   font-size: 21px;
   line-height: 28px;
-  color: #9da199;
+  color: #b0b5ac;
 }
 
 #main_container {
@@ -53,7 +53,7 @@ p {
 }
 @keyframes pulse {
   20% {
-    color: #9da199;
+    color: #b0b5ac;
   }
   100% {
     color: #7d944e;
@@ -86,7 +86,7 @@ b {
 }
 
 a {
-  color: #d3d5cf;
+  color: #e6f0de;
   font-weight: 500;
   text-decoration: none;
   /*
@@ -138,7 +138,7 @@ img {
 }
 @media screen and (max-width: 500px) {
   body {
-    margin: 56px 24px;
-    font-size: 24px;
+    margin: 56px 28px;
+    font-size: 23px;
   }
 }/*# sourceMappingURL=style.css.map */
