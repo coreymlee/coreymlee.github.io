@@ -1,7 +1,7 @@
 html {
   display: flex;
   padding: 0;
-  background-color: #041b04;
+  background-color: #041e0a;
   min-height: 100%;
 }
 
@@ -45,7 +45,7 @@ p {
 }
 
 #header {
-  margin-bottom: 84px;
+  margin-bottom: 56px;
 }
 #header #status {
   font-style: italic;

@@ -1,11 +1,10 @@
-$bg-color:#041b04;
+$bg-color:#041e0a;
 $text-color: #b0b5ac;
 $link-color: #e6f0de;
 $highlight-color: rgb(184, 196, 189);
 $base-type-size: 21px;
 $base-lh: 28px;
 $base-p-spacing: 22px;
-
 $serif:  Crimson Pro, EB Garamond, Georgia, serif;
 $sans-serif: -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
@@ -55,7 +54,7 @@ p {
 }
 
 #header {
-  margin-bottom: 3*$base-lh;
+  margin-bottom: 2*$base-lh;
 
   #status {
     font-style: italic;
