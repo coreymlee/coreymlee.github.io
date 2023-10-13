@@ -42,9 +42,11 @@ body {
 
   &#left {
     height: calc(100% - $padding*2);
-    background-color: #bdbdbd;
+    background-color: #E3E8E3;
+
+
     align-items: center;
-    background: url("/images/image.png");
+
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
