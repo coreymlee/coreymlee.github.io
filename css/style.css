@@ -115,7 +115,7 @@ a {
 }
 @media screen and (max-width: 512px) {
   body {
-    font-size: 21px;
+    font-size: 20.5px;
   }
   #main_container {
     flex-direction: column;
