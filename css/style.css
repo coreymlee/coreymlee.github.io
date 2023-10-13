@@ -46,7 +46,7 @@ body {
 }
 
 p, #projects {
-  margin: 0 auto 20px;
+  margin: 20px auto 0;
   padding: 0;
   width: 100%;
   max-width: 480px;
@@ -89,19 +89,6 @@ p, #projects {
 
 a {
   color: #012003;
-  /*
-    text-decoration-color: $highlight-color;
-    text-decoration-thickness: 0px;
-
-    &:hover {    
-      background-color: #f7eedd;
-    }
-    */
-}
-
-img {
-  width: 100%;
-  vertical-align: middle;
 }
 
 @media screen and (max-width: 1080px) {
@@ -122,7 +109,6 @@ img {
   }
   .content#right {
     margin: 64px;
-    max-width: 480px;
   }
 }
 @media screen and (max-width: 512px) {

@@ -56,10 +56,11 @@ body {
 }
 
 p, #projects {
-  margin: 0 auto $base-p-spacing;
+  margin: $base-p-spacing auto 0;
   padding:0;  
   width: 100%;
   max-width: 480px;
+
 }
 
 #projects {
@@ -110,20 +111,8 @@ p, #projects {
 
 a {
   color: $link-color;
-/*
-  text-decoration-color: $highlight-color;
-  text-decoration-thickness: 0px;
-
-  &:hover {    
-    background-color: #f7eedd;
-  }
-  */
 }
 
-img {
-  width: 100%;
-  vertical-align: middle;
-}
 
 @media screen and (max-width: 1080px) {
   $padding: 32px;
@@ -149,7 +138,6 @@ img {
 
     &#right {
       margin: $padding*2;
-      max-width: 480px;
     }
   }
 }
@@ -173,7 +161,6 @@ img {
     &#right {
       margin: $padding;
       max-width: none;
-      
     }
   }
   
