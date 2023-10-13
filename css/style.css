@@ -1,94 +1,94 @@
 html {
   display: flex;
+  margin: 0;
   padding: 0;
-  background-color: #041e0a;
+  background-color: #ffffff;
   min-height: 100%;
+  height: 100%;
 }
 
 body {
-  margin: 56px;
   width: 100%;
   display: flex;
-  align-items: center;
+  margin: 0;
   font-family: Crimson Pro, EB Garamond, Georgia, serif;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 19.5px;
   line-height: 28px;
-  color: #b0b5ac;
+  color: #012003;
 }
 
 #main_container {
-  margin: auto;
   width: 100%;
-  max-width: 540px;
+  height: 100%;
+  margin: 0;
   display: flex;
-  gap: 56px;
   align-items: center;
 }
 
 .content {
-  width: 100%;
+  display: flex;
+  width: calc(50% - 80px);
+  margin: 40px;
 }
 .content#left {
-  opacity: 85%;
+  height: calc(100% - 80px);
+  background-color: #bdbdbd;
+  align-items: center;
+  background: url("/images/image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 .content#right {
+  flex-direction: column;
+}
+
+p, #projects {
+  margin: 0 auto 20px;
   padding: 0;
-}
-.content#right p {
-  max-width: 680px;
-}
-
-p {
-  margin: 0 0 22px;
-  padding: 0;
+  width: 100%;
+  max-width: 480px;
 }
 
-#header {
-  margin-bottom: 56px;
-}
-#header #status {
-  font-style: italic;
-  animation: pulse 4s infinite alternate;
-}
-@keyframes pulse {
-  20% {
-    color: #b0b5ac;
-  }
-  100% {
-    color: #7d944e;
-  }
-}
-#header #indicator {
-  color: #7d944e;
-  font-size: 21px;
-  margin-right: 2.1px;
+#projects {
+  font-size: 16px;
+  -moz-column-count: 2;
+       column-count: 2;
+  padding: 20px 0 0;
+  list-style-type: none;
 }
 
-ul {
-  margin: 0;
+#blurb {
+  width: 100%;
+  font: 500 48px/64px -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  text-align: center;
+  text-shadow: 0px 4px 20px #012003;
+  color: white;
 }
-
-#contact {
-  display: none;
+@keyframes pulse {}
+#blurb #indicator {
+  display: inline-block;
 }
-#contact a {
-  padding: 7px 14px;
-  margin-right: 14px;
-  border: 1.5px solid black;
-  text-decoration: none;
-  font-size: 19px;
-  font-weight: 500;
+#blurb #indicator #dot_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-
-b {
-  font-weight: 700;
+#blurb #indicator #dot {
+  animation: pulse 3s infinite alternate;
+  background: #FFE600;
+  margin: auto;
+  border-radius: 100%;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px #012003;
 }
 
 a {
-  color: #e6f0de;
-  font-weight: 500;
-  text-decoration: none;
+  color: #012003;
   /*
     text-decoration-color: $highlight-color;
     text-decoration-thickness: 0px;
@@ -105,40 +105,58 @@ img {
 }
 
 @media screen and (max-width: 1080px) {
-  body {
-    margin: 56px 28px;
+  html {
+    height: auto;
   }
   #main_container {
     flex-direction: column;
-    height: auto;
-    gap: 56px;
-    max-width: 560px;
+    padding-bottom: 32px;
   }
   .content {
-    width: 100%;
+    margin: 32px;
+    width: calc(100% - 64px);
+    height: auto;
   }
   .content#left {
-    background: url("../images/corey.png");
-    background-size: cover;
-    background-position: center;
-    opacity: 85%;
-    border-radius: 100%;
-    height: 240px;
-    width: 240px;
-  }
-  .content#left img {
-    display: none;
+    height: 512px;
   }
   .content#right {
-    padding: 0;
-  }
-  .content#right p {
-    max-width: none;
+    margin: 64px;
+    max-width: 480px;
   }
 }
-@media screen and (max-width: 500px) {
-  body {
-    margin: 56px 28px;
-    font-size: 23px;
+@media screen and (max-width: 512px) {
+  #main_container {
+    flex-direction: column;
+    padding-bottom: 24px;
+  }
+  .content {
+    margin: 24px;
+    width: calc(100% - 48px);
+    height: auto;
+  }
+  .content#left {
+    height: 384px;
+  }
+  .content#right {
+    margin: 24px;
+    max-width: none;
+  }
+  #blurb {
+    width: 100%;
+    font: 500 32px/40px -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+    text-shadow: 0px 4px 16px #012003;
+  }
+  #blurb #indicator {
+    display: inline-block;
+  }
+  #blurb #indicator #dot {
+    height: 24px;
+    width: 24px;
+    box-shadow: 0px 4px 16px #012003;
+  }
+  #projects {
+    -moz-column-count: 1;
+         column-count: 1;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,25 +1,27 @@
-$bg-color:#041e0a;
-$text-color: #b0b5ac;
-$link-color: #e6f0de;
+$bg-color:#ffffff;
+$text-color: #012003;
+$link-color: #012003;
 $highlight-color: rgb(184, 196, 189);
-$base-type-size: 21px;
+$base-type-size: 19.5px;
 $base-lh: 28px;
-$base-p-spacing: 22px;
+$base-p-spacing: 20px;
+$padding: 40px;
 $serif:  Crimson Pro, EB Garamond, Georgia, serif;
 $sans-serif: -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
   display: flex;
+  margin:0;
   padding:0;
   background-color: $bg-color;
   min-height:100%;
+  height:100%;
 }
 
 body {
-  margin: $base-lh*2;
   width:100%;
   display:flex;
-  align-items: center;
+  margin:0;
   font-family: $serif;
   font-weight:300;
   font-size: $base-type-size;
@@ -27,80 +29,87 @@ body {
   color: $text-color;
 }
 #main_container {
-  margin: auto;
   width: 100%;
-  max-width: 540px;
+  height:100%;
+  margin:0;
   display: flex;
-  gap: $base-lh*2;
   align-items: center;
 }
 .content {
-  width: 100%;
+  display: flex;
+  width: calc(50% - $padding*2);
+  margin: $padding;
 
   &#left {
-    opacity:85%;
+    height: calc(100% - $padding*2);
+    background-color: #bdbdbd;
+    align-items: center;
+    background: url("/images/image.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    text-align: center;
   }
   &#right {
-    padding: 0;
-
-    p {
-      max-width: 680px;
-    }
+    flex-direction: column;
   }
 }
-p {
-  margin: 0 0 $base-p-spacing;
-  padding:0;
+
+p, #projects {
+  margin: 0 auto $base-p-spacing;
+  padding:0;  
+  width: 100%;
+  max-width: 480px;
 }
 
-#header {
-  margin-bottom: 2*$base-lh;
+#projects {
+  font-size: 16px;
+  column-count: 2;
+  padding: $base-p-spacing 0 0;
+  list-style-type: none;
+}
 
-  #status {
-    font-style: italic;
-    animation: pulse 4s infinite alternate;
-  }
+
+#blurb {
+  width: 100%;
+  font: 500 48px/64px $sans-serif;
+  text-align: center;
+  text-shadow: 0px 4px 20px $text-color;
+  color: white;
   
   @keyframes pulse {
-    20% {
-
-      color: $text-color;
+    50% {
     }
     100% {
-      color: #7d944e;
     }
   }
 
   #indicator {
-    color: #7d944e;
-    font-size: 1*$base-type-size;
-    margin-right: .1*$base-type-size;
+    display: inline-block;   
+  
+    #dot_container {
+      display: flex;
+      flex-direction: row;      
+      align-items: center;
+    }
+
+    #dot {
+      animation: pulse 3s infinite alternate; 
+      background: #FFE600;
+      margin: auto;
+      border-radius: 100%;
+      height: 32px;
+      width: 32px;
+      overflow: hidden;
+      box-shadow: 0px 4px 20px $text-color;
+    }
+
   }
 }
 
-ul {
-  margin:0;
-}
 
-#contact {
-  display: none;
-  a {
-    padding: 0.25*$base-lh 0.5*$base-lh;
-    margin-right: 0.5*$base-lh;
-    border: 1.5px solid black;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 500;
-  }
-}
-
-b {
-  font-weight: 700;
-}
 a {
   color: $link-color;
-  font-weight: 500;
-  text-decoration: none;
 /*
   text-decoration-color: $highlight-color;
   text-decoration-thickness: 0px;
@@ -117,45 +126,75 @@ img {
 }
 
 @media screen and (max-width: 1080px) {
+  $padding: 32px;
+
+  html {
+    height: auto;
+  }
   body {
-    margin: $base-lh*2 $base-lh;
+
   }
   #main_container {
     flex-direction: column;
-    height: auto;
-    gap: $base-lh*2;
-    max-width: 560px;
+    padding-bottom: $padding;
   } 
   .content {
-    width: 100%;
+    margin: $padding;
+    width: calc(100% - $padding*2);
+    height: auto;
 
     &#left {
-      background: url("../images/corey.png");
-      background-size: cover;
-      background-position: center;
-      opacity:85%;
-      border-radius: 100%;
-      height: 240px;
-      width: 240px;
-
-      img {
-        display: none;
-      }
-  
+      height: $padding*16;
     }
-    &#right {
-      padding:0;
 
-      p { max-width: none; }
+    &#right {
+      margin: $padding*2;
+      max-width: 480px;
     }
   }
 }
 
-@media screen and (max-width: 500px) {
-  $base-type-size: 23px;
+@media screen and (max-width: 512px) {
+  $padding: 24px;
 
-  body {
-    margin: $base-lh*2 $base-lh;
-    font-size: $base-type-size;
+  #main_container {
+    flex-direction: column;
+    padding-bottom: $padding;
+  } 
+  .content {
+    margin: $padding;
+    width: calc(100% - $padding*2);
+    height: auto;
+
+    &#left {
+      height: $padding*16;
+    }
+
+    &#right {
+      margin: $padding;
+      max-width: none;
+      
+    }
   }
+  
+  #blurb {
+    width: 100%;
+    font: 500 32px/40px $sans-serif;
+    text-shadow: 0px 4px 16px $text-color;
+  
+    #indicator {
+      display: inline-block;   
+    
+      #dot {
+        height: 24px;
+        width: 24px;
+        box-shadow: 0px 4px 16px $text-color;
+      }  
+    }
+  }
+
+  #projects {
+    column-count: 1;
+  }
+  
 }
