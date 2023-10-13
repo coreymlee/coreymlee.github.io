@@ -28,11 +28,12 @@ body {
 
 .content {
   display: flex;
-  width: calc(50% - 80px);
+  width: calc(50% - 40px);
   margin: 40px;
 }
 .content#left {
   height: calc(100% - 80px);
+  margin-right: 0;
   align-items: center;
   background-color: #E3E8E3;
   background: url("/images/image.png");
@@ -106,6 +107,7 @@ a {
   }
   .content#left {
     height: 512px;
+    margin: 32px;
   }
   .content#right {
     margin: 64px;
@@ -125,7 +127,8 @@ a {
     height: auto;
   }
   .content#left {
-    height: 384px;
+    height: 400px;
+    margin: 24px;
   }
   .content#right {
     margin: 24px;
