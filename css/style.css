@@ -33,8 +33,9 @@ body {
 }
 .content#left {
   height: calc(100% - 80px);
-  background-color: #E3E8E3;
   align-items: center;
+  background-color: #E3E8E3;
+  background: url("/images/image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
