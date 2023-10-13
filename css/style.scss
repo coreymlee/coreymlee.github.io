@@ -145,6 +145,10 @@ a {
 @media screen and (max-width: 512px) {
   $padding: 24px;
 
+  body {
+    font-size: 20px;
+  }
+
   #main_container {
     flex-direction: column;
     padding-bottom: $padding;
