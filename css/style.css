@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   width: 100%;
   margin: 0;
-  font-family: Crimson Pro, EB Garamond, Georgia, serif;
+  font-family: Crimson Text, EB Garamond, Georgia, serif;
   font-size: 21px;
   line-height: 26px;
   color: #012003;
@@ -38,14 +38,14 @@ p, h3, #projects {
 }
 
 h3 {
-  font: 600 21px/24px SF Pro, -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+  font: 500 21px/24px SF Pro, -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
   font-variation-settings: "wght" 500, "wdth" 130;
   margin-bottom: 24px;
 }
 
 #blurb {
   max-width: 100%;
-  font: 400 40px/40px Crimson Pro, EB Garamond, Georgia, serif;
+  font: 400 40px/40px Crimson Text, EB Garamond, Georgia, serif;
   margin-bottom: 24px;
 }
 
@@ -73,7 +73,7 @@ a {
   }
   #blurb {
     margin-top: 24px;
-    font: 400 35px/36px Crimson Pro, EB Garamond, Georgia, serif;
+    font: 400 35px/36px Crimson Text, EB Garamond, Georgia, serif;
   }
   #image {
     display: block;
