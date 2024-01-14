@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   width: 100%;
   margin: 0;
-  font-family: Crimson Text, EB Garamond, Georgia, serif;
+  font-family: Crimson Pro, EB Garamond, Georgia, serif;
   font-size: 21px;
   line-height: 26px;
   color: #012003;
@@ -45,7 +45,7 @@ h3 {
 
 #blurb {
   max-width: 100%;
-  font: 400 40px/40px Crimson Text, EB Garamond, Georgia, serif;
+  font: 400 40px/40px Crimson Pro, EB Garamond, Georgia, serif;
   margin-bottom: 24px;
 }
 
@@ -73,7 +73,7 @@ a {
   }
   #blurb {
     margin-top: 24px;
-    font: 400 35px/36px Crimson Text, EB Garamond, Georgia, serif;
+    font: 400 35px/36px Crimson Pro, EB Garamond, Georgia, serif;
   }
   #image {
     display: block;
