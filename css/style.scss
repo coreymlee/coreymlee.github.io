@@ -2,8 +2,8 @@ $bg-color:#F1F5F2;
 $text-color: #012003;
 $link-color: #012003;
 $highlight-color: rgb(184, 196, 189);
-$base-type-size: 20px;
-$base-lh: 24px;
+$base-type-size: 21px;
+$base-lh: 26px;
 $base-p-spacing: 20px;
 $padding: 80px;
 $serif:  Crimson Pro, EB Garamond, Georgia, serif;
@@ -14,9 +14,11 @@ html {
   padding:0;
   background-color: $bg-color;
   min-height:100%;
+  height:100%;
 }
 
 body {
+  min-height: 100%;
   width:100%;
   margin:0;
   font-family: $serif;
@@ -24,11 +26,13 @@ body {
   line-height: $base-lh;
   color: $text-color;
   font-weight:300;
+  display: flex;
+  align-items: center;
 }
 
 #main_container {
   max-width: 620px;
-  margin:0 auto;
+  margin:0 auto;  
   padding: $padding;
 }
 .content {
@@ -56,6 +60,7 @@ h3 {
 }
 
 #image {
+  display: none;
   margin-top: $base-lh;
   
   img {
@@ -90,4 +95,8 @@ a {
     margin-top: 24px;
     font: 400 35px/36px $serif;
   }  
+
+  #image {
+    display: block;
+  }
 }
