@@ -1,193 +1,95 @@
-$bg-color:#ffffff;
+$bg-color:#F1F5F2;
 $text-color: #012003;
 $link-color: #012003;
 $highlight-color: rgb(184, 196, 189);
-$base-type-size: 19.5px;
-$base-lh: 28px;
+$base-type-size: 20px;
+$base-lh: 24px;
 $base-p-spacing: 20px;
-$padding: 40px;
+$padding: 80px;
 $serif:  Crimson Pro, EB Garamond, Georgia, serif;
-$sans-serif: -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+$sans-serif: SF Pro, -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
 
 html {
-  display: flex;
   margin:0;
   padding:0;
   background-color: $bg-color;
   min-height:100%;
-  height:100%;
 }
 
 body {
   width:100%;
-  display:flex;
   margin:0;
   font-family: $serif;
-  font-weight:300;
   font-size: $base-type-size;
   line-height: $base-lh;
   color: $text-color;
+  font-weight:300;
 }
 #main_container {
-  width: 100%;
-  height:100%;
-  margin:0;
-  display: flex;
-  align-items: center;
+  margin:0 auto;
+  padding: $padding;
 }
 .content {
   display: flex;
-  width: calc(50% - $padding);
-  margin: $padding;
-
-  &#left {
-    height: calc(100% - $padding*2);
-    margin-right: 0;
-    align-items: center;
-    background-color: #E3E8E3;
-    background: url("/images/image.png");
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    text-align: center;
-  }
-  &#right {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
-p, #projects {
-  margin: $base-p-spacing auto 0;
+p, h3, #projects {
+  max-width: 520px;
+  margin: 0 0 $base-p-spacing;
   padding:0;  
   width: 100%;
-  max-width: 480px;
 }
 
-#projects {
-  font-size: 16px;
-  column-count: 2;
-  padding: $base-p-spacing 0 0;
-  list-style-type: none;
+h3 {
+  font: 600 21px/24px $sans-serif;
+  font-variation-settings: "wght" 400, "wdth" 130;
+  margin-bottom: 24px;
 }
-
 
 #blurb {
-  width: 100%;
-  font: 500 48px/64px $sans-serif;
-  text-align: center;
-  text-shadow: 0px 4px 20px $text-color;
-  color: white;
-  
-  @keyframes pulse {
-    50% {
-    }
-    100% {
-    }
-  }
-
-  #indicator {
-    display: inline-block;   
-  
-    #dot_container {
-      display: flex;
-      flex-direction: row;      
-      align-items: center;
-    }
-
-    #dot {
-      animation: pulse 3s infinite alternate; 
-      background: #FFE600;
-      margin: auto;
-      border-radius: 100%;
-      height: 32px;
-      width: 32px;
-      overflow: hidden;
-      box-shadow: 0px 4px 20px $text-color;
-    }
-
-  }
+  font: 400 40px/40px $serif;
+  max-width: 620px;
+  margin-bottom: 24px;
 }
 
+#image {
+  margin-top: $base-lh;
+  
+  img {
+    width: 300px;
+    max-width: 100%;
+  }
+}
 
 a {
   color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
 }
 
 
-@media screen and (max-width: 1080px) {
-  $padding: 32px;
-
-  html {
-    height: auto;
-  }
-  body {
-
-  }
-  #main_container {
-    flex-direction: column;
-    padding-bottom: $padding;
-  } 
-  .content {
-    margin: $padding;
-    width: calc(100% - $padding*2);
-    height: auto;
-
-    &#left {
-      height: $padding*16;
-      margin: $padding;
-    }
-
-    &#right {
-      margin: $padding*2;
-    }
-  }
-}
-
-@media screen and (max-width: 512px) {
+@media screen and (max-width: 600px) {
   $padding: 24px;
 
   body {
-    font-size: 20.5px;
+    font-size: 20px;
   }
 
   #main_container {
-    flex-direction: column;
-    padding-bottom: $padding;    
-  } 
-  .content {
-    margin: $padding;
-    width: calc(100% - $padding*2);
-    height: auto;
+    padding: 40px $padding;
+  }
 
-    &#left {
-      height: 400px;
-      margin: $padding;
-    }
 
-    &#right {
-      margin: $padding;
-      max-width: none;
-    }
+  p, h3, #projects {
+    max-width: 100%;
+  }  
+  
+  #blurb {
+    max-width: 100%;
   }
   
   #blurb {
-    width: 100%;
-    font: 500 32px/40px $sans-serif;
-    text-shadow: 0px 4px 16px $text-color;
-  
-    #indicator {
-      display: inline-block;   
-    
-      #dot {
-        height: 24px;
-        width: 24px;
-        box-shadow: 0px 4px 16px $text-color;
-      }  
-    }
-  }
-
-  #projects {
-    column-count: 1;
-  }
-  
+    font: 400 36px/36px $serif;
+  }  
 }
