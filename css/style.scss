@@ -25,7 +25,9 @@ body {
   color: $text-color;
   font-weight:300;
 }
+
 #main_container {
+  max-width: 620px;
   margin:0 auto;
   padding: $padding;
 }
@@ -43,13 +45,13 @@ p, h3, #projects {
 
 h3 {
   font: 600 21px/24px $sans-serif;
-  font-variation-settings: "wght" 400, "wdth" 130;
+  font-variation-settings: "wght" 500, "wdth" 130;
   margin-bottom: 24px;
 }
 
 #blurb {
+  max-width: 100%;
   font: 400 40px/40px $serif;
-  max-width: 620px;
   margin-bottom: 24px;
 }
 
@@ -73,23 +75,19 @@ a {
   $padding: 24px;
 
   body {
-    font-size: 20px;
   }
 
   #main_container {
-    padding: 40px $padding;
+    padding: 40px $padding 80px;
   }
-
-
-  p, h3, #projects {
+  
+  p, h3, #proj
+  ects {
     max-width: 100%;
   }  
-  
+    
   #blurb {
-    max-width: 100%;
-  }
-  
-  #blurb {
-    font: 400 36px/36px $serif;
+    margin-top: 24px;
+    font: 400 35px/36px $serif;
   }  
 }
