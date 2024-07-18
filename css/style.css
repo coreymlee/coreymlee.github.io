@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
-  src: url("/fonts/Crimson_Pro,Crimson_Text/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf") format("woff2");
+  src: url("/fonts/Crimson_Pro/static/CrimsonPro-Regular.ttf") format("woff2");
 }
 html {
   margin: 0;
