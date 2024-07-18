@@ -12,7 +12,15 @@ $sans-serif: "SF Pro", -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemF
 @font-face {
   font-family: 'Crimson Pro';
   font-style: normal;
+  font-weight: 400;
   src: url("/fonts/Crimson_Pro/static/CrimsonPro-Regular.ttf") format('woff2');
+}
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Crimson_Pro/static/CrimsonPro-Light.ttf") format('woff2');
 }
 
 html {
