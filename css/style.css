@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  src: url("/fonts/Crimson_Pro,Crimson_Text/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf") format("woff2");
+}
 html {
   margin: 0;
   padding: 0;
@@ -10,7 +15,7 @@ body {
   min-height: 100%;
   width: 100%;
   margin: 0;
-  font-family: "Crimson Pro", EB Garamond, Georgia, serif;
+  font-family: "Crimson Pro", Courier, EB Garamond, Georgia, serif;
   font-size: 21px;
   line-height: 26px;
   color: #012003;
@@ -45,7 +50,7 @@ h3 {
 
 #blurb {
   max-width: 100%;
-  font: 400 40px/40px "Crimson Pro", EB Garamond, Georgia, serif;
+  font: 400 40px/40px "Crimson Pro", Courier, EB Garamond, Georgia, serif;
   margin-bottom: 24px;
 }
 
@@ -73,7 +78,7 @@ a {
   }
   #blurb {
     margin-top: 24px;
-    font: 400 35px/36px "Crimson Pro", EB Garamond, Georgia, serif;
+    font: 400 35px/36px "Crimson Pro", Courier, EB Garamond, Georgia, serif;
   }
   #image {
     display: block;

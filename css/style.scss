@@ -6,8 +6,14 @@ $base-type-size: 21px;
 $base-lh: 26px;
 $base-p-spacing: 20px;
 $padding: 80px;
-$serif:  "Crimson Pro", EB Garamond, Georgia, serif;
+$serif:  "Crimson Pro", Courier, EB Garamond, Georgia, serif;
 $sans-serif: "SF Pro", -apple-system, Helvetica Neue, Helvetica, BlinkMacSystemFont, sans-serif, "Apple Color Emoji";
+
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  src: url("/fonts/Crimson_Pro,Crimson_Text/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf") format('woff2');
+}
 
 html {
   margin:0;
